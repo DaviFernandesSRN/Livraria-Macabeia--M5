@@ -1,25 +1,25 @@
-import fornecedor from "../models/fornecedor-model.js"
+import fornecedores from "../models/Fornecedores.js"
 
 class FornecedorController {
         //listar Aluguel appget
     static listarFornecedor = (req, res) => {
-        fornecedor.find((err, fornecedor) => {
-            res.status(200).json(fornecedor)
+        fornecedores.find((err, fornecedores) => {
+            res.status(200).json(fornecedores)
     })}
         //listar Aluguel por id 
         static listarFornecedorId = (req, res) => {
             const id = req.params.id;
         
-            fornecedor.findById(id, (err, fornecedor) => {
+            fornecedores.findById(id, (err, fornecedores) => {
               if(err) {
                 res.status(400).send({message: `${err.message} - Id do fornecedor não localizado.`})
               } else {
-                res.status(200).send(fornecedor);}
+                res.status(200).send(fornecedores);}
             })
         }
             //cadastrar Aluguel 
     static cadastrarFornecedor = (req, res) => {
-    let Novoforne = new fornecedor(req.body);
+    let Novoforne = new fornecedores(req.body);
 
     Novoforne.save((err) => {
     
@@ -35,7 +35,7 @@ class FornecedorController {
 static atualizarFornecedor = (req, res) => {
     const id = req.params.id;
 
-    fornecedor.findByIdAndUpdate(id, {$set: req.body}, (err) =>{
+    fornecedores.findByIdAndUpdate(id, {$set: req.body}, (err) =>{
         if(!err) {
             res.status(200).send({message: 'fornecedor atualizado com sucesso'})
         } else{
@@ -47,7 +47,7 @@ static atualizarFornecedor = (req, res) => {
 static excluirFornecedor = (req, res) =>{
     const id = req.params.id;
 
-    fornecedor.findByIdAndDelete(id, (err) =>{
+    fornecedores.findByIdAndDelete(id, (err) =>{
         if(!err){
             res.status(200).send({message: 'fornecedor removido com sucesso'})
         } else {

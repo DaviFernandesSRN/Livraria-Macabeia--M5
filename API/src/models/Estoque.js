@@ -22,6 +22,6 @@ const estoqueSchema = new mongoose.Schema(
     }
 );
 
-const estoque = mongoose.model('estoque', estoqueSchema);
+const estoque= mongoose.model('estoque', estoqueSchema);
 
 export default estoque;
