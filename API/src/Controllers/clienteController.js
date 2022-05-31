@@ -1,35 +1,35 @@
-import cliente from "../models/Clientes.js"
+import clientes from "../models/Clientes.js"
 
 class ClienteController {
     //listar estoque appget
 static listarCliente = (req, res) => {
-    cliente.find((err, cliente) => {
-        res.status(200).json(cliente)
+    clientes.find((err, clientes) => {
+        res.status(200).json(clientes)
 })}
     //listar cliente por id 
     static listarClienteId = (req, res) => {
         const id = req.params.id;
     
-        cliente.findById(id, (err, cliente) => {
+        clientes.findById(id, (err, clientes) => {
           if(err) {
             res.status(400).send({message: `${err.message} - Produto não localizado.`})
           } else {
-            res.status(200).send(cliente);}
-        })
+            res.status(200).send(clientes)
+     } })
     }
 
            //cadastrar estoque 
            static cadastrarCliente = (req, res) => {
-            let clientes = new cliente(req.body);
+            let client = new clientes(req.body);
         
-            clientes.save((err) => {
+            client.save((err) => {
             
                 if(err) {
                     res.status(500).send({message: `${err.message} - falha ao cadastrar o cliente.`})
                 } else {
                     res.status(201).send({message: "cliente cadastrado com sucesso",
             
-                                          "cliente": clientes                                })
+                                          "cliente": client                                })
 }
         })
         }
@@ -38,7 +38,7 @@ static listarCliente = (req, res) => {
 static atualizarCliente = (req, res) => {
     const id = req.params.id;
 
-    cliente.findByIdAndUpdate(id, {$set: req.body}, (err) =>{
+    clientes.findByIdAndUpdate(id, {$set: req.body}, (err) =>{
         if(!err) {
             res.status(200).send({message: 'Cliente foi atualizado com sucesso'})
         } else{
@@ -50,7 +50,7 @@ static atualizarCliente = (req, res) => {
 static excluirCliente = (req, res) =>{
     const id = req.params.id;
 
-    cliente.findByIdAndDelete(id, (err) =>{
+    clientes.findByIdAndDelete(id, (err) =>{
         if(!err){
             res.status(200).send({message: 'CLIENTE removido com sucesso'})
         } else {
