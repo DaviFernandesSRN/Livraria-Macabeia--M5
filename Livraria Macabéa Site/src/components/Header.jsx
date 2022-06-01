@@ -5,7 +5,7 @@ import { faUser, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-sol
 
 function Header () {
     return (
-        <nav className='top'>
+        <header className='top'>
             <img src="src\img\logo.png" className='logo' />
             <div className='rightbar'>
                 <div className='search-bar'>
@@ -20,7 +20,7 @@ function Header () {
                     <FontAwesomeIcon icon={faUser} className="icon" />
                 </div>
             </div>
-        </nav>
+        </header>
     )
 }
 

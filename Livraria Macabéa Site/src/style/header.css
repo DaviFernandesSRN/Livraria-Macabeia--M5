@@ -3,9 +3,11 @@
 :root{
     --black: #211b1c;
     --grey: #8f8f89;
+    --mustyblack: #151d11;
 }
 
 .top {
+    box-sizing: border-box;
     width: 100vw;
     padding: 10px;
     display: flex;
@@ -26,7 +28,7 @@
 }
 
 .icon {
-    height: clamp(20px, 30px, 40px);
+    height: clamp(20px, 1rem, 40px);
 }
 
 .rightbar {
@@ -40,7 +42,7 @@
 
 .search-bar {
     width: clamp(300px, 500px, 90%);
-    border: 1px solid var(--grey); 
+    border: 1px solid var(--mustyblack); 
     border-radius: 50px;
     display: flex;
     flex-direction: row;
