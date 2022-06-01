@@ -1,0 +1,25 @@
+NAVBAR:
+Carrinho de compras: <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
+Login: <FontAwesomeIcon icon="fa-solid fa-user" />
+
+CARDS: UNDER TOP
+Shipping: <FontAwesomeIcon icon="fa-solid fa-truck-fast" />
+Pay: <FontAwesomeIcon icon="fa-solid fa-credit-card" />
+Price: <FontAwesomeIcon icon="fa-solid fa-tag" />
+Security: <FontAwesomeIcon icon="fa-solid fa-user-shield" />
+
+CARDS:
+Clients: <FontAwesomeIcon icon="fa-solid fa-users" />
+Book: <FontAwesomeIcon icon="fa-solid fa-book-open" />
+Stores: <FontAwesomeIcon icon="fa-solid fa-shop" />
+
+FOOTER:
+Location: <FontAwesomeIcon icon="fa-regular fa-compass" />
+Keep in touch: <FontAwesomeIcon icon="fa-solid fa-share-nodes" />
+FB: <FontAwesomeIcon icon="fa-brands fa-facebook-square" />
+Twitter: <FontAwesomeIcon icon="fa-brands fa-twitter-square" />
+Insta: <FontAwesomeIcon icon="fa-brands fa-instagram-square" />
+Info: <FontAwesomeIcon icon="fa-solid fa-info" />
+
+Kit code:
+<script src="https://kit.fontawesome.com/241e2059a9.js" crossorigin="anonymous"></script>
