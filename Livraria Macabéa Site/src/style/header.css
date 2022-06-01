@@ -49,3 +49,17 @@
     padding: 10px;
     font-size: 1rem;
 }
+
+#search-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #search-toggle {
+        display: inline;
+    }
+
+    .search-bar {
+        display: none;
+    }
+}

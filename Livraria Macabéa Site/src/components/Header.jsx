@@ -13,7 +13,9 @@ function Header () {
                     &nbsp;
                     Procure por mais de XX livros
                 </div>
+                
                 <div className='icons'>
+                <FontAwesomeIcon icon={faMagnifyingGlass} className="icon" id="search-toggle"/>
                     <FontAwesomeIcon icon={faCartShopping} className="icon" />
                     <FontAwesomeIcon icon={faUser} className="icon" />
                 </div>
