@@ -13,10 +13,18 @@
     background-color: var(--red);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 2rem;
     color: var(--black);
     font-family: 'Fira Sans', sans-serif;
     font-size: 11px;
+}
+
+.footer-col {
+    text-align: justify;
+}
+
+.footer-title {
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {

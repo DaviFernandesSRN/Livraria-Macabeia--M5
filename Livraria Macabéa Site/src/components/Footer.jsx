@@ -1,13 +1,41 @@
 import React from 'react'
 import '../style/footer.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faBook, faLocationCrosshairs, faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 function Footer () {
     return (
         <footer className='footer'>
-            <div className='description'>FOOTER:Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam natus unde laborum quisquam quaerat odio quidem error non ipsum fuga, aspernatur corrupti excepturi tempora minus provident! Molestias, laudantium eveniet.</div>
-            <div className='office-location'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur rerum laboriosam repellat laborum unde natus cumque sit, esse eos id odio cupiditate sequi praesentium eligendi! Et accusamus nesciunt dicta?</div>
-            <div className='socials'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde earum voluptate impedit magnam nihil possimus incidunt optio blanditiis reiciendis accusantium magni, dolorum quidem libero expedita asperiores veritatis nisi ex assumenda!</div>
-            <div className='info'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste iusto tenetur esse aliquid rem consequuntur nulla ipsa. Eveniet ad consequatur quidem beatae placeat vel id illum exercitationem tenetur. Libero?</div>
+            <div className='footer-col'>
+                <span className='footer-title'>
+                {/* <FontAwesomeIcon icon={faBook} /> LIVRARIA</span> */}
+                <br />
+                <br/>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eos sint, aliquam nobis maxime autem voluptatibus quis nulla pariatur incidunt ad et quas, error, voluptatem porro laboriosam recusandae dicta tempora?
+                <br/>
+                <br/>
+                {/* Incluir route para a página sobre */}
+                Saiba mais sobre nós
+            </div>
+            <div className='footer-col'>
+            <span className='footer-title'>
+                {/* <FontAwesomeIcon icon={faLocationCrosshairs} /> NOSSA SEDE</span> */}
+                <br/>
+                <br/>
+                São Paulo, SP<br/>
+                CEP: 04.190-980<br />
+                Tel.: 55 11 9 8738 8378
+                Email: admin@macabea.com.br
+                </div>
+            <div className='footer-col'>
+            <span className='footer-title'>
+                {/* <FontAwesomeIcon icon={faShareNodes} /> NOSSA SEDE</span> */}
+                <br/>
+                <br/>
+                <img src="src\img\instagram-square-brands.svg" /> Instagram
+
+            </div>
+            <div className='footer-col'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste iusto tenetur esse aliquid rem consequuntur nulla ipsa. Eveniet ad consequatur quidem beatae placeat vel id illum exercitationem tenetur. Libero?</div>
         </footer>
     )
 }
