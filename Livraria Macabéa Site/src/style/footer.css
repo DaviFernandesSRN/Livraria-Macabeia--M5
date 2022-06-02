@@ -17,6 +17,7 @@
     color: var(--black);
     font-family: 'Fira Sans', sans-serif;
     font-size: 11px;
+    font-weight: 600;
 }
 
 .footer-col {
@@ -25,6 +26,11 @@
 
 .footer-title {
     font-size: 1.5rem;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
 }
 
 @media screen and (max-width: 768px) {

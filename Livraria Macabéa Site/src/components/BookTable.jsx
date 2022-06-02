@@ -4,6 +4,7 @@ import "../style/livro.css"
 function BookTable () {
     return (
         <table className='booktable'>
+            <tbody>
             <tr>
                 <td className='propname'>Nome do título:</td>
                 <td className='propvalue'>Blablabla</td>
@@ -28,6 +29,7 @@ function BookTable () {
                 <td className='propname'>Edição:</td>
                 <td className='propvalue'>Blablabla</td>
             </tr>
+            </tbody>
         </table>
     )
 }
