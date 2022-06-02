@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBook, faLocationCrosshairs, faShareNodes } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faLocationCrosshairs, faShareNodes, faInfo } from '@fortawesome/free-solid-svg-icons'
 
 function Footer () {
     return (
@@ -38,7 +38,12 @@ function Footer () {
                 <br/>
                 <img SRC="src\img\twitter-square-brands.svg" className='icon' /> Twitter
             </div>
-            <div className='footer-col'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste iusto tenetur esse aliquid rem consequuntur nulla ipsa. Eveniet ad consequatur quidem beatae placeat vel id illum exercitationem tenetur. Libero?
+            <div className='footer-col'>
+            <span className='footer-title'>
+                <FontAwesomeIcon icon={faInfo} /> INFORMAÇÕES</span>
+                <br/>
+                <br/>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste iusto tenetur esse aliquid rem consequuntur nulla ipsa. Eveniet ad consequatur quidem beatae placeat vel id illum exercitationem tenetur. Libero?
             </div>
         </footer>
     )

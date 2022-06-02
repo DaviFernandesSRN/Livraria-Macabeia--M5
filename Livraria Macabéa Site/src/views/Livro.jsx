@@ -2,6 +2,7 @@ import React from 'react'
 import BookCover from '../components/BookCover'
 import BookSection from '../components/BookSection'
 import BookTable from '../components/BookTable'
+import LivrosRelacionados from '../components/LivrosRelacionados'
 import '../style/livro.css'
 
 function PaginaLivro () {
@@ -10,6 +11,7 @@ function PaginaLivro () {
             <BookCover />
             <BookSection />
             <BookTable />
+            <LivrosRelacionados />
         </section>
     )
 }
