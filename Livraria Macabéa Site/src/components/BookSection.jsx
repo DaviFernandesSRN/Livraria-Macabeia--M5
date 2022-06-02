@@ -1,14 +1,21 @@
 import React from "react";
+import BookTitle from "./BookTitle";
+import BookAuthor from "./BookAuthor";
+import BookRating from "./BookRating";
+import BookPrice from "./BookPrice";
+import CartAmount from "./CartAmount"
+import ButtonCart from "./ButtonCart";
 
 function BookSection () {
     return (
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste ab modi architecto unde numquam nesciunt non, at vero pariatur, labore magnam mollitia quae tenetur, voluptates saepe animi quaerat sequi!</p>
-        // BookTItle
-        // BookAuthor
-        // Avaliação
-        // Preço
-        // QtdeCArrinho
-        // BotaoAddCarrinho
+        <div>
+            <BookTitle />
+            <BookAuthor />
+            <BookRating />
+            <BookPrice />
+            <CartAmount />
+            <ButtonCart />
+        </div>
     )
 }
 

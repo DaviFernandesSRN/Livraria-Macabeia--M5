@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 350px 30vw 20vw;
     grid-template-rows: 500px auto;
-    gap: 10px;
+    gap: 2rem;
 }
 
 .booktable {
