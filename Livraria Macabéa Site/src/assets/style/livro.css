@@ -13,8 +13,12 @@
     width: clamp(100%, 80%, 70%);
     display: grid;
     grid-template-columns: 350px 30vw 20vw;
-    grid-template-rows: 500px auto;
+    grid-template-rows: auto;
     gap: 2rem;
+}
+
+.book-section {
+    height: auto;
 }
 
 .booktable {
