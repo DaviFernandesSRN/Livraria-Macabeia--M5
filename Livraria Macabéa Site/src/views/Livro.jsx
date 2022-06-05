@@ -9,7 +9,7 @@ function PaginaLivro () {
     return(
         <section className='main'>
             <BookCover />
-            <BookSection />
+            <BookSection className='book-section' />
             <BookTable />
             <LivrosRelacionados />
         </section>
