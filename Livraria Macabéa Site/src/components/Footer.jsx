@@ -35,11 +35,11 @@ function Footer () {
                 <br/>
                 {/* <FontAwesomeIcon icon={['fab', 'facebook-f']} className='icon' />
                 <FontAwesomeIcon icon={faFacebook} className='icon' /> */}
-                <img src="..assets\img\instagram-icon.png" className='icon' /> Instagram
+                <img src="src\assets\img\instagram-icon.png" className='icon' /> Instagram
                 <br/>
-                <img src="..assets\img\facebook-icon.png" className='icon' /> Facebook
+                <img src="src\assets\img\facebook-icon.png" className='icon' /> Facebook
                 <br/>
-                <img src="..assets\img\twitter-icon.png" className='icon' /> Twitter
+                <img src="src\assets\img\twitter-icon.png" className='icon' /> Twitter
             </div>
             <div className='footer-col'>
             <span className='footer-title'>
