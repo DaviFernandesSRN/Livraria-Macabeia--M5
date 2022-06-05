@@ -1,6 +1,6 @@
 import {Route, BrowserRouter} from 'react-router-dom'
-import Home from './views/Home'
-import Sobre from './views/Sobre'
+import Home from './pages/Home'
+import Sobre from './pages/Sobre'
 // import Fantasia from './Fantasia'
 // import FicLit from './FicLit'
 // import YA from './YA'
