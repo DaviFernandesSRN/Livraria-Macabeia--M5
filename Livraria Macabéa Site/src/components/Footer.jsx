@@ -1,7 +1,8 @@
 import React from 'react'
-import 'src\assets\style\footer.css'
+import '../assets/style/footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faLocationCrosshairs, faShareNodes, faInfo } from '@fortawesome/free-solid-svg-icons'
+// import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 function Footer () {
     return (
@@ -29,14 +30,16 @@ function Footer () {
                 </div>
             <div className='footer-col'>
             <span className='footer-title'>
-                <FontAwesomeIcon icon={faShareNodes} /> REDES</span>
+                <FontAwesomeIcon icon={faShareNodes} /> REDES SOCIAIS</span>
                 <br/>
                 <br/>
-                <img src="src\assets\img\instagram-square-brands.svg" className='icon' /> Instagram
+                {/* <FontAwesomeIcon icon={['fab', 'facebook-f']} className='icon' />
+                <FontAwesomeIcon icon={faFacebook} className='icon' /> */}
+                <img src="..assets\img\instagram-icon.png" className='icon' /> Instagram
                 <br/>
-                <img SRC="src\assets\img\facebook-square-brands.svg" className='icon' /> Facebook
+                <img src="..assets\img\facebook-icon.png" className='icon' /> Facebook
                 <br/>
-                <img SRC="src\assets\img\twitter-square-brands.svg" className='icon' /> Twitter
+                <img src="..assets\img\twitter-icon.png" className='icon' /> Twitter
             </div>
             <div className='footer-col'>
             <span className='footer-title'>
