@@ -6,11 +6,8 @@
     --greyletter: #737373;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .main {
+    font-family: 'Fira Sans';
     box-sizing: border-box;
     padding: 2rem;
     width: clamp(100%, 80%, 70%);
@@ -40,7 +37,6 @@ td:nth-child(even) {
     width: 70%;
     font-weight: 500;
 }
-
 .relatedbooks {
     grid-column: 3/4;
     grid-row: 1/4;

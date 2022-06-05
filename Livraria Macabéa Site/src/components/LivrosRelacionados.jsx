@@ -4,7 +4,7 @@ import '../assets/style/livro.css'
 function LivrosRelacionados () {
     return (
         <div className='relatedbooks'>
-            <h4>Livros relacionados</h4>
+            <h4 className=''>Livros relacionados</h4>
         </div>
     )
 }

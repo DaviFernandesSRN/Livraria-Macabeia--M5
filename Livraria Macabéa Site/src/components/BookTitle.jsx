@@ -1,7 +1,8 @@
 import React from "react";
+import '../assets/style/livro-section.css'
 
 function BookTitle () {
-    return (<h2>Titulo do livro</h2>)
+    return (<p className="book-title">Title</p>)
 }
 
 export default BookTitle;

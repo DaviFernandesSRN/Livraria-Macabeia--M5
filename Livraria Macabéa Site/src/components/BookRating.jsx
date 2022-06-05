@@ -1,7 +1,7 @@
 import React from "react";
 
 function BookRating () {
-    return (<h1>5.5</h1>)
+    return (<p className="book-rating">Avaliação: 4.5</p>)
 }
 
 export default BookRating;

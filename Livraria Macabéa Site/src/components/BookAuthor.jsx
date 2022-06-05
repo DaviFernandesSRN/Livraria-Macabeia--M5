@@ -1,7 +1,8 @@
 import React from "react";
+import '../assets/style/livro-section.css'
 
 function BookAuthor () {
-    return (<h1>Autor do livro</h1>)
-}
+    return (<p className="book-author">Autor: Autor do livro</p>)
+} 
 
 export default BookAuthor;
