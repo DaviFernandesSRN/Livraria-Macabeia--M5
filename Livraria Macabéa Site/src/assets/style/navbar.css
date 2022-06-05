@@ -44,7 +44,7 @@ a:visited {
 }
 
 a:hover {
-    color: var(--red);
+    /* color: var(--red); */
 }
 
 a:active {
