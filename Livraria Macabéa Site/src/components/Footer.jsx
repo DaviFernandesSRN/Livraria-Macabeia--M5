@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/footer.css'
+import 'src\assets\style\footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faLocationCrosshairs, faShareNodes, faInfo } from '@fortawesome/free-solid-svg-icons'
 
@@ -32,11 +32,11 @@ function Footer () {
                 <FontAwesomeIcon icon={faShareNodes} /> REDES</span>
                 <br/>
                 <br/>
-                <img src="src\img\instagram-square-brands.svg" className='icon' /> Instagram
+                <img src="src\assets\img\instagram-square-brands.svg" className='icon' /> Instagram
                 <br/>
-                <img SRC="src\img\facebook-square-brands.svg" className='icon' /> Facebook
+                <img SRC="src\assets\img\facebook-square-brands.svg" className='icon' /> Facebook
                 <br/>
-                <img SRC="src\img\twitter-square-brands.svg" className='icon' /> Twitter
+                <img SRC="src\assets\img\twitter-square-brands.svg" className='icon' /> Twitter
             </div>
             <div className='footer-col'>
             <span className='footer-title'>

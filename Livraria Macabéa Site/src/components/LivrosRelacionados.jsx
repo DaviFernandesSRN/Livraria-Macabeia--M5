@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/livro.css'
+import 'src\assets\style\livro.css'
 
 function LivrosRelacionados () {
     return (

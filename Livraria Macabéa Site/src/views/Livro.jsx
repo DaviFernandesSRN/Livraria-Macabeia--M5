@@ -3,7 +3,7 @@ import BookCover from '../components/BookCover'
 import BookSection from '../components/BookSection'
 import BookTable from '../components/BookTable'
 import LivrosRelacionados from '../components/LivrosRelacionados'
-import '../style/livro.css'
+import 'src\assets\style\livro.css'
 
 function PaginaLivro () {
     return(
