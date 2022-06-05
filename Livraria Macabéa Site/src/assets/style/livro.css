@@ -6,6 +6,10 @@
     --greyletter: #737373;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .main {
     box-sizing: border-box;
     padding: 2rem;

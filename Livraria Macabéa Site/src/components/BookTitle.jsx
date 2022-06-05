@@ -1,7 +1,7 @@
 import React from "react";
 
 function BookTitle () {
-    return (<h1>Titulo do livro</h1>)
+    return (<h2>Titulo do livro</h2>)
 }
 
 export default BookTitle;
