@@ -1,8 +1,9 @@
 import React from 'react'
 import '../assets/style/footer.css'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faLocationCrosshairs, faShareNodes, faInfo } from '@fortawesome/free-solid-svg-icons'
-// import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faFacebookSquare, faTwitterSquare, faInstagramSquare } from "@fortawesome/free-brands-svg-icons"
 
 function Footer () {
     return (
@@ -16,7 +17,7 @@ function Footer () {
                 <br/>
                 <br/>
                 {/* Incluir route para a página sobre */}
-                Saiba mais sobre nós
+                <Link to='/sobre'>Saiba mais sobre nós</Link>
             </div>
             <div className='footer-col'>
             <span className='footer-title'>
@@ -33,13 +34,11 @@ function Footer () {
                 <FontAwesomeIcon icon={faShareNodes} /> REDES SOCIAIS</span>
                 <br/>
                 <br/>
-                {/* <FontAwesomeIcon icon={['fab', 'facebook-f']} className='icon' />
-                <FontAwesomeIcon icon={faFacebook} className='icon' /> */}
-                <img src="src\assets\img\instagram-icon.png" className='icon' /> Instagram
+                <FontAwesomeIcon icon={faInstagramSquare} className='icon' /> Instagram
                 <br/>
-                <img src="src\assets\img\fb-icon.png" className='icon' /> Facebook
+                <FontAwesomeIcon icon={faFacebookSquare} className='icon' /> Facebook
                 <br/>
-                <img src="src\assets\img\tt-icon.png" className='icon' /> Twitter
+                <FontAwesomeIcon icon={faTwitterSquare} className='icon' /> Twitter
             </div>
             <div className='footer-col'>
             <span className='footer-title'>

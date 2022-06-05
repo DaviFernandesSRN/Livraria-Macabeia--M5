@@ -4,15 +4,19 @@ import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import PaginaLivro from './views/Livro'
+import Routes from './routes'
 import './index.css'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
     return (
         <div>
-        <Header />
-    <Navbar />
-    <PaginaLivro />
-    <Footer />
+            <BrowserRouter>
+                <Header />
+                <Navbar />
+                <PaginaLivro />
+                <Footer />
+            </BrowserRouter>
     </div>
     )
 }
