@@ -7,7 +7,6 @@ import Home from './views/Home'
 import Routes from './routes'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
-import Livro from './views/Livro'
 
 function App() {
     return (
