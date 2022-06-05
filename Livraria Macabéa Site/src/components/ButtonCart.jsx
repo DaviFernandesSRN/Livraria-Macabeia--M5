@@ -1,9 +1,10 @@
 import React from "react";
+import '../assets/style/button.css'
 
 function ButtonCart () {
     return (
         <button>
-            Comprar
+            COMPRAR
         </button>
     )
 }

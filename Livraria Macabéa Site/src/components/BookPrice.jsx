@@ -3,7 +3,7 @@ import '../assets/style/livro-section.css'
 
 function BookPrice () {
     return (<div className="book-price">
-        R$10
+        R$ 10
     </div>)
 }
 
