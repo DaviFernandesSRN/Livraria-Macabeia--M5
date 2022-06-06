@@ -1,18 +1,49 @@
-import {Route, BrowserRouter} from 'react-router-dom'
+import {Route, BrowserRouter, Routes, Navigate} from 'react-router-dom'
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Livros from './pages/Livros'
-// import Login from './pages/Login'
- 
- const Routes = () => {
+import { AuthContext, AuthProvider } from './context/AuthContext'
+import Login from './pages/Login'
+import { useContext } from 'react'
+
+
+ const AppRoutes = () => {
+    const Private = ({children}) =>{
+        const {authenticate, loading} = useContext(AuthContext);
+        if(loading){
+            return <div className='loading'>carregando...</div>
+        }
+
+        if(!authenticate){
+            return <Navigate to='/Login'/>;
+        }
+
+        return children;
+    }
+
+
      return (
         <BrowserRouter>
-            <Route component = {Home} path="/" exact />
-            <Route component = {Sobre} path='/sobre' />
-            {/* <Route component = {Login} path='/login' /> */}
-            <Route component = {Livros} path='/livros' />
+        <AuthProvider>
+        
+        <Routes>
+            <Route path='/' element={ <Private> <Home/> </Private> }/>
+            <Route path='/sobre' element = {<Sobre/>} />
+            <Route path='/livros' element = {<Livros/>}  />
+            <Route  path='/login' element= {<Login/>}  />
+            </Routes>
+            </AuthProvider>
         </BrowserRouter>
+       
      )
+
+
+
  } 
 
- export default Routes;
+
+
+
+
+
+ export default AppRoutes;
