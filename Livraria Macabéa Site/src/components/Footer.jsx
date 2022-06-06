@@ -26,7 +26,7 @@ function Footer () {
                 <br/>
                 São Paulo, SP<br/>
                 CEP: 04.190-980<br />
-                Tel.: 55 11 9 8738 8378
+                Tel.: 55 11 9 8738 8378<br/>
                 Email: admin@macabea.com.br
                 </div>
             <div className='footer-col'>

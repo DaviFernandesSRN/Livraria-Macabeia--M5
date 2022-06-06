@@ -1,11 +1,14 @@
 import React from 'react'
-import '../assets/style/'
+import BannerTop from '../components/BannerTop'
+import TopCards from '../components/TopCards'
+import BookShop from '../components/BookShop'
 
 function Home() {
     return (
-        <div className='container'>
-            <h1>Home</h1>
-
+        <div>
+            <BannerTop />
+            <TopCards />
+            <BookShop />
         </div>
         
     )

@@ -14,7 +14,7 @@
     
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 1rem 0 1rem 0;
     background-color: var(--mustyblack);
     color: white;
@@ -34,26 +34,26 @@ li {
     list-style-type: none;
 }
 
-a {
+li > a {
     color: whitesmoke;
     text-decoration: none;
     position: relative;
 }
 
-a:visited {
+li > a:visited {
     color: whitesmoke;
 }
 
-a:hover {
-    /* color: var(--red); */
+li > a:hover {
+    color: var(--red);
 }
 
-a:active {
+li > a:active {
     color: var(--red);
 }
 
 /* creating the animated underline */
-a::before {
+li> a::before {
     content: "";
     position: absolute;
     display: block;
@@ -67,6 +67,6 @@ a::before {
     transition: transform 0.3s ease;
   }
 
-  a:hover::before {
+  li> a:hover::before {
     transform: scaleX(1);
   }
