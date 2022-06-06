@@ -14,7 +14,7 @@ button {
     background-color: var(--red);
     border: 0px;
     color: white;
-    box-shadow: 5px 5px 5px var(--grey);
+    box-shadow: 5px 5px 5px #000;
     border-radius: 100px;
     height: 35px;
     width: 100px;
