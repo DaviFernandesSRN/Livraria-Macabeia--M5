@@ -11,11 +11,8 @@ function Navbar() {
                 <li>
                     <Link to='/'>Home</Link>
                 </li>
-                <li>Fantasia</li>
-                <li>YA</li>
-                <li>Não-ficção</li>
-                <li>Clássicos</li>
-                <li>Ficção Literária</li>
+                <li><Link to="/livros">Livros</Link></li>
+                <li><Link to="/login">Login</Link></li>
                 <li>
                 <Link to='/sobre'>Sobre nós</Link>
                 </li>
