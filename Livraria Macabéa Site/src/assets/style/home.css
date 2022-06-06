@@ -2,3 +2,39 @@
     display: flex;
     justify-content: center;
 }
+
+.banner-top {
+    width: 100%;
+    min-height: 200px;
+    max-height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-top {
+    position: relative;
+    left: 100px;
+    animation-name: slide-left;
+    animation-duration: 2s;
+}
+
+.img-top {
+    position: relative;
+    height: 70vh;
+    animation-name: slide-right;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+}
+
+/* animations */
+@keyframes slide-right {
+    0% {right: -100px; }
+    100% {right: 0px;}
+}
+
+@keyframes slide-left {
+    0% {left: -100px}
+    50% {left: 50px}
+    100% {left: 100px;}
+}
