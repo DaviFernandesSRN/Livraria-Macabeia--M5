@@ -9,7 +9,21 @@ function BookShop () {
             <Link to="/livros">
                 <BookThumb/>
             </Link>
-            
+            <Link to="/livros">
+                <BookThumb/>
+            </Link>
+            <Link to="/livros">
+                <BookThumb/>
+            </Link>
+            <Link to="/livros">
+                <BookThumb/>
+            </Link>
+            <Link to="/livros">
+                <BookThumb/>
+            </Link>
+            <Link to="/livros">
+                <BookThumb/>
+            </Link>
         </div>
     )
 }

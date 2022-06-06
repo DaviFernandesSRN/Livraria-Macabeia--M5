@@ -12,8 +12,10 @@
 }
 
 .cardcontainer {
+    border: 1px solid var(--greyborder);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     box-shadow: 0px 3px 5px var(--greyborder);
 }
@@ -45,4 +47,8 @@ p {
 .icon-card-top {
     width: 25%;
     font-size: 5rem;
+}
+
+@media (max-width: 768px) {
+    
 }

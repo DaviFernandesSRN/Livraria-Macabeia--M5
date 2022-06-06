@@ -9,6 +9,24 @@
 .container-book-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
     padding: 2rem;
+    gap: 2rem;
+}
+
+@media (max-width: 400px) {
+    .container-book-grid {
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .container-book-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+   
 }

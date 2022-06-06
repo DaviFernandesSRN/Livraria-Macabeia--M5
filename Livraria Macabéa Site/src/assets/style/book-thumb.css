@@ -1,6 +1,29 @@
-.book-card {
-    border-radius: 10%;
+:root {
+    --grey: rgb(223, 225, 235, 0.4);
+    --opaquegrey: rgb(223, 225, 235);
+    --greyletter: #737373;
 }
+
+.book-card {
+    /* margin: 2rem; */
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* .book-card:hover {
+    animation-name: pop-card;
+    animation-duration: 1s;
+    animation-direction: alternate;
+} */
+
+/* @keyframes pop-card {
+    0% {left: 0px; top: 0px; box-shadow: 0px 0px 0px var(--grey);}
+    100% {left: 10px; top: 10px; box-shadow: -10px -10px 10px var(--grey);}
+} */
 
 a {
     color: #000;

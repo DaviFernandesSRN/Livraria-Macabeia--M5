@@ -20,6 +20,7 @@
     height: 70vh;
     animation-name: slide-right;
     animation-duration: 2s;
+    z-index: 0;
     /* animation-delay: 2s; */
 }
 
@@ -34,6 +35,7 @@
     left: 4rem;
     animation-name: slide-left;
     animation-duration: 2s;
+    z-index: 2;
 }
 
 @keyframes slide-left {
