@@ -3,9 +3,22 @@ import BookCover from '../components/BookCover'
 import BookSection from '../components/BookSection'
 import BookTable from '../components/BookTable'
 import '../style/livro.css'
+import axios from "axios";
 
 function PaginaLivro () {
-    return(
+
+          useEffect(() => {
+            axios.get("https://livrariamacabeia.herokuapp.com/livros/")
+            .then((response) => {
+                console.log(response)
+            }).catch(() => {
+                console.log("Deu errado")
+            })
+          
+          }, [])
+
+
+          return(
         <section className='main'>
             <BookCover />
             <BookSection />
@@ -13,5 +26,7 @@ function PaginaLivro () {
         </section>
     )
 }
+
+
 
 export default PaginaLivro;

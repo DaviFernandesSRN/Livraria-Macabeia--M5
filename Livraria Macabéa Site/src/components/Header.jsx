@@ -3,6 +3,8 @@ import '../style/header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
+
+
 function Header () {
     return (
         <header className='top'>
@@ -11,7 +13,7 @@ function Header () {
                 <div className='search-bar'>
                     <FontAwesomeIcon icon={faMagnifyingGlass} className="icon" />
                     &nbsp;
-                    Procure por mais de XX livros
+                    Procure por mais de 10 livros
                 </div>
                 
                 <div className='icons'>
