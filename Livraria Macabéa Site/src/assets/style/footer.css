@@ -20,8 +20,28 @@
     font-weight: 600;
 }
 
+
+
 .footer-col {
     text-align: justify;
+}
+
+.footer-col > a {
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-col > a:visited {
+    color: whitesmoke;
+}
+
+.footer-col > a:hover {
+    color: var(--red);
+}
+
+.footer-col > a:active {
+    color: var(--red);
 }
 
 .footer-title {
@@ -33,6 +53,10 @@
     color: white;
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.icon:hover {
+    color: var(--red);
 }
 
 @media screen and (max-width: 768px) {

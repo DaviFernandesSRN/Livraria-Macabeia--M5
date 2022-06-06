@@ -7,7 +7,7 @@ import BookThumbPrice from './book-thumbnails/BookThumbPrice'
 
 function BookThumb () {
     return (
-        <section>
+        <section className='book-card'>
             <BookThumbCover  />
             <BookThumbTitle/>
             <BookThumbAuthor />
