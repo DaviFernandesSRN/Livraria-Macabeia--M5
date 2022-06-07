@@ -13,23 +13,23 @@ import axios from 'axios'
 function Home() {
 
     const[livros, setLivros] = useState([])
-    const[ilivros, setIlivros] = useState('')
+     
+    // // const saidaUsuario = () =>{
+    // //     logout()
+        // }
 
-     function gaxios(title) {
-        axios.get (`http://localhost:8000/livros/titulo/${title}`)
+    useEffect(() => {
+        axios.get ("http://livrariamacabeia.herokuapp.com/livros")
         .then((response) =>{
             console.log(response.data)
         }).catch(() => {
             console.log("Deu Errado")
         })
-     }
-       
+    }, [])
     
     return (
         <div>
              <Header />
-             <input type="text" onChange={(e)=>setIlivros(e.target.value)} />
-             <button onClick={()=>gaxios(ilivros)}> pesquisar</button>
                 <Navbar />
              <BannerTop />
             <TopCards />
