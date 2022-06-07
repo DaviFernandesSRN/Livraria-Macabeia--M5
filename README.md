@@ -57,7 +57,7 @@
 ```
 git clone https://github.com/DaviFernandesSRN/Livraria-Macabeia--M5.git
 npm install vite@lastest
-npm run dev
+npm start / npm run build
 ```
 Abra http://localhost:3000 para ver o app no navegador.
 
