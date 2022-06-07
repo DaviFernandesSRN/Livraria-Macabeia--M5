@@ -6,7 +6,6 @@ import { AuthContext, AuthProvider } from './context/AuthContext'
 import Login from './pages/Login'
 import { useContext } from 'react'
 
-
  const AppRoutes = () => {
     const Private = ({children}) =>{
         const {authenticate, loading} = useContext(AuthContext);
