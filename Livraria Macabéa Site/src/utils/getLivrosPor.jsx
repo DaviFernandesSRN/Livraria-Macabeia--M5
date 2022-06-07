@@ -28,6 +28,7 @@ function GetLivrosPor() {
     return <div className="loading"> Carregando dados...</div>
   }
 
+  // Inserir isso na página individual de livro
   return (
     <div>
       
@@ -47,4 +48,4 @@ function GetLivrosPor() {
   )
 }
 
-export default GetLivrosPor
+export default GetLivrosPor;

@@ -34,17 +34,17 @@ function Footer () {
                 <FontAwesomeIcon icon={faShareNodes} /> REDES SOCIAIS</span>
                 <br/>
                 <br/>
-                <Link to="instagram.com">
+                <Link to="http://instagram.com">
                 <FontAwesomeIcon icon={faInstagramSquare} className='icon' /> Instagram
                 </Link>
                 
                 <br/>
-                <Link to="facebook.com">
+                <Link to="http://facebook.com">
                 <FontAwesomeIcon icon={faFacebookSquare} className='icon' /> Facebook
                 </Link>
                 
                 <br/>
-                <Link to="twitter.com">
+                <Link to="http://twitter.com">
                 <FontAwesomeIcon icon={faTwitterSquare} className='icon' /> Twitter
                 </Link>
             </div>
