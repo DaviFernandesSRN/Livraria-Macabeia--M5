@@ -28,7 +28,7 @@ import App from './utils/getLivrosPor'
         <AuthProvider>
         
         <Routes>
-            <Route path='/' element={ <Private> <Home/> </Private> }/>
+            <Route path='/' index element={  <Home/> }/>
             <Route path='/sobre' element = {<Sobre/>} />
             <Route path='/livros' element = {<Livros/>}  />
             <Route  path='/login' element= {<Login/>}  />
