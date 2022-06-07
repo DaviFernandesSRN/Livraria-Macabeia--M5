@@ -1,5 +1,4 @@
-import React, {useContext, useState} from 'react';
-import { AuthContext } from '../context/AuthContext';
+import React from 'react';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';

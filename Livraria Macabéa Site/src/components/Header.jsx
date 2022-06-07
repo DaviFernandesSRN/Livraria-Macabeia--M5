@@ -34,9 +34,6 @@ function Header () {
                 <Link to='/conta'>
                     <img src="src\assets\img\account.png" className="icon" />
                 </Link>
-                <Link to='/Cadastro'>
-                    Cadastro
-                </Link>
 
             </div>
   
