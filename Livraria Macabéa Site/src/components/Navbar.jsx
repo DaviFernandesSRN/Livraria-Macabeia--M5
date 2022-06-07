@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/style/navbar.css'
 import {Route, BrowserRouter} from 'react-router-dom'
-import Routes from '../routes'
+import AppRoutes from '../routes'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
@@ -17,7 +17,7 @@ function Navbar() {
                 <Link to='/sobre'>Sobre nós</Link>
                 </li>
             </ul>
-            {/* Home Fantasia YA Não-ficção Clássicos Ficção Literária Sobre nós */}
+
         </nav>
     )
 };
