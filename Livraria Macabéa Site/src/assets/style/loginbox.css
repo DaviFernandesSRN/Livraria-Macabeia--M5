@@ -1,5 +1,7 @@
 #login {
+    background-color: white;
     width: 100%;
-    background-color: green;
-    border: 3px solid yellow;
+    height: 100%;
+    border: 3px solid var(--red);
+    border-radius: 10px;
 }
