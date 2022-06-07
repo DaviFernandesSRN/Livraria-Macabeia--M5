@@ -1,12 +1,9 @@
 import React from 'react'
 import '../assets/style/header.css'
 import { Link } from 'react-router-dom'
-<<<<<<< Updated upstream
 import GetLivrosPor from '../utils/getLivrosPor'
 import axios from 'axios'
 import {useState} from 'react';
-=======
->>>>>>> Stashed changes
 
 function Header () {
     const[ilivros, setIlivros] = useState('')
