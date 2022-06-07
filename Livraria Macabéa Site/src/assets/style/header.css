@@ -42,7 +42,7 @@
 }
 
 .search-bar {
-    width: clamp(200px, 400px, 70%);
+    width: clamp(30%, 400px, 70%);
     border: 1px solid var(--mustyblack); 
     border-radius: 50px;
     display: flex;
