@@ -1,9 +1,5 @@
 import React, {useContext, useState} from 'react';
 import { AuthContext } from '../context/AuthContext';
-import Header from '../components/Header';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
 
 function Login() {
   const {login, user} = useContext(AuthContext);
@@ -21,11 +17,7 @@ function Login() {
   }
 
   return (
-    <div>
-      <Header />
-      <Navbar />
     <main>
-      
     <div id="login">
 
       <h1 className="title"> Login</h1>   
@@ -62,8 +54,6 @@ function Login() {
     </div>
 
     </main>
-    <Footer />
-    </div>
   )
 }
 

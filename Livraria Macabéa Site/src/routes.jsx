@@ -6,7 +6,7 @@ import { AuthContext, AuthProvider } from './context/AuthContext'
 import Login from './pages/Login'
 import { useContext } from 'react'
 import CadastroPage from './pages/Cadastro'
-import GetLivrosPor from './utils/getLivrosPor'
+import App from './utils/getLivrosPor'
 
  const AppRoutes = () => {
     const Private = ({children}) =>{
@@ -28,16 +28,25 @@ import GetLivrosPor from './utils/getLivrosPor'
         <AuthProvider>
         
         <Routes>
-            <Route path='/' index element={ <Home/>  }/>
+            <Route path='/' element={ <Private> <Home/> </Private> }/>
             <Route path='/sobre' element = {<Sobre/>} />
             <Route path='/livros' element = {<Livros/>}  />
             <Route  path='/login' element= {<Login/>}  />
             <Route path="/Cadastro" element={<CadastroPage/>}/>
-           <Route path="/procurar/:titulo" element={<GetLivrosPor/>}/>
+           <Route path="/procurar/:titulo" element={<App/>}/>
             </Routes>
             </AuthProvider>
-        </BrowserRouter> 
+        </BrowserRouter>
+       
      )
+
+
+
  } 
+
+
+
+
+
 
  export default AppRoutes;
