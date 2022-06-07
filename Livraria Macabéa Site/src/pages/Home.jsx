@@ -32,7 +32,7 @@ function Home() {
     //     }).catch(() => {
     //         console.log("Deu Errado")
     //     })
-    //  }
+    
        
     return (
         <div>

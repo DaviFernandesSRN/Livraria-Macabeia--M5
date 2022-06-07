@@ -1,16 +1,20 @@
 import React, {useState, useEffect, createContext} from 'react'
 import { useNavigate } from 'react-router-dom';
-import { createSession} from "../utils/axios"
+import { createSession, createUser} from "../utils/axios"
+
 export const AuthContext = createContext();
-
-
 export const AuthProvider = ({children}) =>{
 
     const navigate = useNavigate();
-
     const [user, setUser] = useState(null);
-
     const [loading, setLoading] = useState(true);
+    const cadastro = async(nome,email,senha,endereco,cpf,data_de_aniversario)=>{
+        const novoClient = await createUser(nome,email,senha,endereco,cpf,data_de_aniversario)
+        console.log(novoClient)
+        if(email&&senha){
+            await login(email, senha)
+        }
+    }
 
     useEffect(()=>{
        const recoveredUser = localStorage.getItem('user');
@@ -28,8 +32,6 @@ export const AuthProvider = ({children}) =>{
 
 
     const login = async (email, senha)=>{
-
-        
         const usuario = await createSession(email, senha)
        
         console.log('login auth', usuario.data);
@@ -46,11 +48,6 @@ export const AuthProvider = ({children}) =>{
 
         const loggedUser = usuario;
 
-
-        // localStorage.setItem('user', loggedUser);
-        
-       // api.defaults.headers.Authorization = `Bearer ${token}`;
-
       
             setUser(loggedUser);
             navigate('/')
@@ -60,14 +57,13 @@ export const AuthProvider = ({children}) =>{
     const logout = ()=>{
         console.log("logout");
         localStorage.removeItem('user')
-        // api.defaults.headers.Authorization = null;
         setUser(null);
         navigate('/Login')
     };
 
     return(
         <AuthContext.Provider 
-        value={{authenticate: !!user, user, login, loading, logout}}>
+        value={{authenticate: !!user, user, login, loading, logout, cadastro}}>
         {children}
         </AuthContext.Provider>    
     )

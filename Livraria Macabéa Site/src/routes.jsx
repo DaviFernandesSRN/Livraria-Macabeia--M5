@@ -28,7 +28,7 @@ import PaginaConta from './pages/Conta'
         <AuthProvider>
         
         <Routes>
-            <Route path='/' index element={ <Home/>  }/>
+            <Route path='/' index element={  <Home/> }/>
             <Route path='/sobre' element = {<Sobre/>} />
             <Route path='/livros' element = {<Livros/>}  />
             <Route  path='/login' element= {<Login/>}  />
@@ -37,8 +37,17 @@ import PaginaConta from './pages/Conta'
            <Route path="/procurar/:titulo" element={<GetLivrosPor/>}/>
             </Routes>
             </AuthProvider>
-        </BrowserRouter> 
+        </BrowserRouter>
+       
      )
+
+
+
  } 
+
+
+
+
+
 
  export default AppRoutes;

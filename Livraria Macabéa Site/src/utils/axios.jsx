@@ -15,8 +15,8 @@ export const createSession = async (email ) =>{
   return api.get('livros');
  }
 
-export const createUser = async ()=>{
-  return await api.post('clientes')
+export const createUser = async (nome,email,senha,endereco,cpf,data_de_aniversario)=>{
+  return await api.post('clientes', {nome:nome , email: email , senha:senha , endereco:endereco , cpf:cpf , data_de_aniversario:data_de_aniversario} )
 }
 
 export const getLivrosPorName = async (titulo)=>{

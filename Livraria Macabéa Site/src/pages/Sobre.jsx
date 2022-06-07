@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 function Sobre() {
     return (
         <div>
-                <Header />
+            <Header />
                 <Navbar />
             <main>
                 <img className='banner' src="" alt="" />
