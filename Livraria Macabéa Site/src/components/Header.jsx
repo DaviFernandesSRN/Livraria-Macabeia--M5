@@ -7,16 +7,18 @@ import {useState} from 'react';
 
 function Header () {
     const[ilivros, setIlivros] = useState('')
+    const MensagemCaixaDeBusca = 'Procure o livro pelo nome';
 
     return (
         <header className='top'>
             <img src="src\assets\img\logo.png" className='logo' />
             <div className='rightbar'>
-                <div className='search-bar'>
+              
+                <input type="text" value={ilivros} onChange={(e)=>setIlivros(e.target.value)} className='search-bar' placeholder={MensagemCaixaDeBusca} />
                     <img src="src\assets\img\search.png" className="icon" />
                     &nbsp;
                     Procure por mais de 10 livros
-                </div>
+             
                 
                 <div className='icons'>
                 
@@ -37,7 +39,7 @@ function Header () {
                 </div>
             </div>
 
-            <input type="text" onChange={(e)=>setIlivros(e.target.value)} />
+            
              <Link to={`/procurar/${ilivros}`} > pesquisar</Link>
         </header>
     )
