@@ -26,7 +26,7 @@ import { useContext } from 'react'
         <AuthProvider>
         
         <Routes>
-            <Route path='/' element={ <Private> <Home/> </Private> }/>
+            <Route path='/' index element={<Home/> }/>
             <Route path='/sobre' element = {<Sobre/>} />
             <Route path='/livros' element = {<Livros/>}  />
             <Route  path='/login' element= {<Login/>}  />
@@ -35,14 +35,6 @@ import { useContext } from 'react'
         </BrowserRouter>
        
      )
-
-
-
  } 
-
-
-
-
-
 
  export default AppRoutes;
