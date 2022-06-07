@@ -22,7 +22,6 @@ import App from './utils/getLivrosPor'
         return children;
     }
 
-
      return (
         <BrowserRouter>
         <AuthProvider>
