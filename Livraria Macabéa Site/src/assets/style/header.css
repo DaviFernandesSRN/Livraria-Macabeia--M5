@@ -38,15 +38,16 @@
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
+    gap: 1rem;
 }
 
 .search-bar {
-    width: clamp(300px, 500px, 90%);
+    width: clamp(200px, 400px, 70%);
     border: 1px solid var(--mustyblack); 
     border-radius: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     font-size: 1rem;
@@ -54,6 +55,14 @@
 
 #search-toggle {
     display: none;
+}
+
+.searchbox {
+    border: none;
+}
+
+.searchbox:focus {
+    outline: none
 }
 
 @media only screen and (max-width: 768px) {
