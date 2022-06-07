@@ -7,18 +7,20 @@ import {useState} from 'react';
 
 function Header () {
     const[ilivros, setIlivros] = useState('')
+    const MessageSearchBox = 'Procure um livro pelo nome'
 
     return (
         <header className='top'>
             <img src="src\assets\img\logo.png" className='logo' />
             <div className='rightbar'>
                 <div className='search-bar'>
-                    <img src="src\assets\img\search.png" className="icon" />
-                    &nbsp;
-                    Procure por mais de 10 livros
+                    <input type="text" onChange={(e)=>setIlivros(e.target.value)} className='searchbox' placeholder={MessageSearchBox} />
+
+                    <Link to={`/procurar/${ilivros}`} > <img src="src\assets\img\search.png" className="icon" /></Link>
+                    
                 </div>
                 
-                <div className='icons'>
+              
                 
                     <img src="src\assets\img\search.png" className="icon" id="search-toggle"/>
                 
@@ -34,11 +36,11 @@ function Header () {
                 </Link>
 
 
-                </div>
+          
             </div>
 
-            <input type="text" onChange={(e)=>setIlivros(e.target.value)} />
-             <Link to={`/procurar/${ilivros}`} > pesquisar</Link>
+            
+           
         </header>
     )
 }
