@@ -36,17 +36,8 @@ import GetLivrosPor from './utils/getLivrosPor'
            <Route path="/procurar/:titulo" element={<GetLivrosPor/>}/>
             </Routes>
             </AuthProvider>
-        </BrowserRouter>
-       
+        </BrowserRouter> 
      )
-
-
-
  } 
-
-
-
-
-
 
  export default AppRoutes;
