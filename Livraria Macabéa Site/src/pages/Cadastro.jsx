@@ -23,7 +23,7 @@ function CadastroPage() {
     return (
       <main>
       <Header />
-  
+      
       <div id="container" >
       <a className="links" id="paralogin"></a>
       

@@ -11,9 +11,7 @@ function GetLivrosPor() {
  const [livros, setLivros] = useState([]);
  const [loading, setLoading] = useState(true);
  const {logout} = useContext(AuthContext);
-  const handleLogout = ()=>{
-    logout();
-  }
+
 
   useEffect(()=>{
     (async()=>{
@@ -32,7 +30,6 @@ function GetLivrosPor() {
     <div>
       
       <Header />
-      <button onClick={handleLogout}>Sair</button>
       <ul>
         {livros.map((titulo)=>(
           <li key={titulo._id}>

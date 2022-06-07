@@ -58,15 +58,4 @@ function Login() {
 }
 
 
-
-
-
-//     <Main>
-//       <Titulo>Login</Titulo>
-//       <Barra/>
-//       <SignIn/>
-//     </Main>
-//   );
-// }
-
 export default Login;
