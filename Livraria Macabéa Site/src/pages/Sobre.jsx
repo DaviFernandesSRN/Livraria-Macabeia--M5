@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Sobre() {
     return (
-        <h1>Sobre</h1>
+        <div>
+            <Header />
+                <Navbar />
+            <main>
+                <img className='banner' src="" alt="" />
+                <h1>Sobre Nós!</h1>
+                <p>Texto sobre a livraria...</p>
+            </main>
+            <Footer />
+        </div>
     )
 }
 
-export default Sobre
+export default Sobre;
