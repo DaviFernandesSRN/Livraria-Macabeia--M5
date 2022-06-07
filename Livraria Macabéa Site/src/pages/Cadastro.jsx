@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-import toastOptions from '../utils/toastOptions';
-import verificaSenha from '../utils/verificaSenha';
+// import toastOptions from '../utils/toastOptions';
+// import verificaSenha from '../utils/verificaSenha';
 
-import { Input, LabelInput } from '../components/Input/Input';
-import { Button } from '../components/Button/Button';
-import { BoxCadastro } from '../components/SignIn/styles';
-import { Main } from '../components/Main/styles';
-import { Titulo, Barra } from '../components/Headings/styles';
-import { criaUsuario } from '../services/usuarioApi';
+import { Input, LabelInput } from '../components/Input';
+import { Button } from '../components/Button';
 
-import '../components/SignIn/signin.scss';
+// Gravar novo usuário
+// import { criaUsuario } from '../services/usuarioApi';
+
+// import '../components/signin.scss';
 
 function Cadastro() {
   const [data, setData] = useState({
@@ -74,10 +77,9 @@ function Cadastro() {
   }
 
   return (
-    <Main>
-      <Titulo>Cadastro</Titulo>
-      <Barra/>
-      <BoxCadastro>
+ <div>
+       <Header />
+                <Navbar />
         <form onSubmit={handleSubmit}>
           <Input
             className="form" name="CPF" type="text" placeholder="CPF 00000000000" required
@@ -116,8 +118,8 @@ function Cadastro() {
           
           <Button type="submit">Cadastrar</Button>
         </form>
-      </BoxCadastro>
-    </Main>
+        <Footer />
+   </div>
   );
 }
 

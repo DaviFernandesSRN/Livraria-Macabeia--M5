@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Livros from './pages/Livros'
 import Carrinho from './pages/Carrinho'
+import Cadastro from './pages/Cadastro'
 import { AuthContext, AuthProvider } from './context/AuthContext'
 import Login from './pages/Login'
 import EditarConta from './pages/EditarConta'
@@ -34,6 +35,7 @@ import { useContext } from 'react'
             <Route  path='/login' element= {<Login/>}  />
             <Route path='/editarconta' element = { <Private> <EditarConta /> </Private>} />
             <Route path='/carrinho' element = {<Carrinho/>}  />
+            <Route path='/cadastro' element = {<Cadastro/>}  />
             </Routes>
             </AuthProvider>
         </BrowserRouter>

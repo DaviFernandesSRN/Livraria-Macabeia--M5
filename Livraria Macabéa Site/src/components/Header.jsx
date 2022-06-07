@@ -14,7 +14,7 @@ function Header () {
                 <div className='search-bar'>
                     <img src="src\assets\img\search.png" className="icon" />
                     &nbsp;
-                    Procure por mais de 10 livros
+                    Procure um livro
                 </div>
                 
                 <div className='icons'>
