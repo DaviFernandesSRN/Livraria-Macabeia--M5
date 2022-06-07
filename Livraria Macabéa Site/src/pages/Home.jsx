@@ -16,7 +16,7 @@ function Home() {
     const[ilivros, setIlivros] = useState('')
 
      function gaxios(title) {
-        axios.get (`http://localhost:8000/livros/titulo/${title}`)
+        axios.get (`https://livrariamacabeia.herokuapp.com/livros/titulo/${title}`)
         .then((response) =>{
             console.log(response.data)
         }).catch(() => {
