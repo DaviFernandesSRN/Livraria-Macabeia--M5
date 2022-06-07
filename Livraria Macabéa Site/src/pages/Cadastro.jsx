@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../components/Header';
-
 import { useState, useContext } from 'react'
 import { AuthContext } from '../context/AuthContext';
 
@@ -10,15 +9,16 @@ function CadastroPage() {
 
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-  const [idade, setIdade] = useState("");
   const [nome, setNome] = useState("");
+  const [data_de_aniversario, setData_de_aniversario] = useState("");
   const [endereco, setEndereco] = useState("");
-  const [favorito, setFavorito ] = useState("");
+  const [cpf, setCpf] = useState("");
 
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
-    console.log('submit', {email, senha}) }
+    await cadastro(nome,email,senha,endereco,cpf,data_de_aniversario)
+ }
 
     return (
       <main>
@@ -34,47 +34,45 @@ function CadastroPage() {
           <h1>Cadastro</h1> 
           
           <p> 
+
             <label htmlFor="nome">Seu nome</label>
             <input id="nome" name="nome" required="required" type="text" placeholder="Insira seu nome"
-            value={nome} 
             onChange={(e)=> setNome(e.target.value)} />
           </p>
           
           <p> 
-            <label htmlFor="idade">Sua idade</label>
-            <input id="idade" name="idade" required="required" type="number" placeholder="Insira sua idade"
-            value={idade} 
-            onChange={(e)=> setIdade(e.target.value)} />
+            <label htmlFor="cpf">Seu Cpf</label>
+            <input id="cpf" name="cpf" required="required" type="number" placeholder="Insira seu Cpf"
+            onChange={(e)=> setCpf(e.target.value)} />
           </p>
 
           <p> 
             <label htmlFor="endereço">Seu Endereço</label>
             <input id="endereço" name="endereço" required="required" type="text" placeholder="Rua resilia"
-            value={endereco} 
+    
             onChange={(e)=> setEndereco(e.target.value)}/> 
           </p>
 
           <p> 
-            <label htmlFor="comida">Seu Livro Favorito</label>
-            <input id="comida" name="comida" required="required" type="text" placeholder="Contos de fada"
-            value={favorito} 
-            onChange={(e)=> setFavorito(e.target.value)}/> 
+            <label htmlFor="Data_de_aniversario"></label>
+            <input id="Data_de_aniversario" name="Data_de_aniversario" required="required" type="text" placeholder="data de nascimento"
+      
+            onChange={(e)=>setData_de_aniversario(e.target.value)}/> 
           </p>
           
           <p> 
             <label htmlFor="email">Seu e-mail</label>
             <input id="email" name="email" required="required" type="email" placeholder="example@example.com"
-            value={email} 
+           
             onChange={(e)=> setEmail(e.target.value)}/> 
           </p>
           
           <p> 
             <label htmlFor="senha">Sua senha</label>
             <input id="senha" name="senha" required="required" type="password" placeholder="1234"
-            value={senha} 
             onChange={(e)=> setSenha(e.target.value)}/>
           </p>
-          
+
           <p> 
             <input type="submit" value="Cadastrar"/> 
           </p>
