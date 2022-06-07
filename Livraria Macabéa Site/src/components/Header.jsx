@@ -4,6 +4,8 @@ import '../assets/style/header.css'
 // import { faUser, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
+
+
 function Header () {
     return (
         <header className='top'>
@@ -12,7 +14,7 @@ function Header () {
                 <div className='search-bar'>
                     <img src="src\assets\img\search.png" className="icon" />
                     &nbsp;
-                    Procure por mais de XX livros
+                    Procure por mais de 10 livros
                 </div>
                 
                 <div className='icons'>
