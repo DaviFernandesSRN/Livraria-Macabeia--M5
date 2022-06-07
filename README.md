@@ -1,6 +1,6 @@
 # <img height="30" src="https://www.resilia.com.br/wp-content/themes/resiliaTheme/assets/images/logo.png" />  
 
-# Módulo 05 - Projeto Final - Desenvolvimento de Front-End de Livraria consumindo BD de API desenvolvida no Módulo 04
+# Módulo 05 - Projeto Final - Desenvolvimento de Front-End da Livraria Macabéa em ReactJS <img height="35" src="https://user-images.githubusercontent.com/21227322/31187159-01c8d592-a8ff-11e7-9386-af708a7ae9de.png" />
 <br>
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
@@ -8,12 +8,13 @@
 <p align="center">
 <img src="https://github.com/irenacosta/Livraria-Macabeia--M5/blob/main/Livraria%20Macab%C3%A9a%20Site/src/assets/img/logo.png?raw=true"/>
 </p>
+
 <hr/>
 
 ## 🔖 Descrição:
 
 <p style="font-size: 16px">Projeto de conclusão do Módulo 5 da <a href="https://www.resilia.com.br/">Resilia Educação</a></p>
-<p style="font-size: 14px">O projeto teve como objetivo ...</p>
+<p style="font-size: 14px">O projeto teve como objetivo e desafio desenvolver o front-end de um site com os conhecimentos adquiridos nas aulas de ReactJS, consumindo a API Rest desenvolvida no módulo 4, utilizando react-router-dom, biblioteca vite, hooks e afins para sua implementação.</p>
 
 <hr/>
 
@@ -50,6 +51,16 @@
 <br>
 <hr/>
 
+## 🚀 Documentação React <img height="25" src="https://user-images.githubusercontent.com/21227322/31187159-01c8d592-a8ff-11e7-9386-af708a7ae9de.png" />
+
+- Instalação
+```
+git clone https://github.com/DaviFernandesSRN/Livraria-Macabeia--M5.git
+npm install vite@lastest
+npm run dev
+```
+Abra http://localhost:3000 para ver o app no navegador.
+
 ## 👥 Equipe:
 | [<img src="https://avatars.githubusercontent.com/u/15349795?v=4" width=115><br><sub>Amanda Alexandre</sub>](https://github.com/amandaalexandre) |  [<img src="https://avatars.githubusercontent.com/u/96249443?v=4" width=115><br><sub>Camille Monteiro</sub>](https://github.com/camimonteiro) |  [<img src="https://avatars.githubusercontent.com/u/96270135?v=4" width=115><br><sub>Davi Fernandes</sub>](https://github.com/DaviFernandesSRN) |
 | :---: | :---: | :---: |
@@ -58,7 +69,7 @@
 ## ⚖️Licença
 MIT License
 
-Copyright (c), 2022. Equipe AMANDA ALEXANDRE, CAMILLE MONTEIRO, DAVI FERNANDES, EMILLY COSTA e IRENA COSTA.
+Copyright (c), 2022. Equipe MACABÉA @ Amanda Alexandre, Camille Monteiro, Davi Fernanes, Emilly Costa e Irena Costa.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
