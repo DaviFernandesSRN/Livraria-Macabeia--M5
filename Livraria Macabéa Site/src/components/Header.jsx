@@ -9,6 +9,10 @@ function Header () {
     const[ilivros, setIlivros] = useState('')
     const MessageSearchBox = 'Procure um livro pelo nome'
 
+    const SearchToggle = () => {
+        
+    }
+
     return (
         <header className='top'>
             <img src="src\assets\img\logo.png" className='logo' />
