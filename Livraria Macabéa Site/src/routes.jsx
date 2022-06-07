@@ -2,6 +2,7 @@ import {Route, BrowserRouter, Routes, Navigate} from 'react-router-dom'
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Livros from './pages/Livros'
+import Carrinho from './pages/Carrinho'
 import { AuthContext, AuthProvider } from './context/AuthContext'
 import Login from './pages/Login'
 import EditarConta from './pages/EditarConta'
@@ -32,6 +33,7 @@ import { useContext } from 'react'
             <Route path='/livros' element = {<Livros/>}  />
             <Route  path='/login' element= {<Login/>}  />
             <Route path='/editarconta' element = { <Private> <EditarConta /> </Private>} />
+            <Route path='/carrinho' element = {<Carrinho/>}  />
             </Routes>
             </AuthProvider>
         </BrowserRouter>

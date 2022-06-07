@@ -25,7 +25,7 @@ function Header () {
                 <Link to="/carrinho">
                     <img src="src\assets\img\shopping-cart.png" className="icon" />
                 </Link>
-                <Link to='/conta'>
+                <Link to='/login'>
                     <img src="src\assets\img\account.png" className="icon" />
                 </Link>
                 </div>
