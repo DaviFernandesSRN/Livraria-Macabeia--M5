@@ -4,6 +4,7 @@ import Sobre from './pages/Sobre'
 import Livros from './pages/Livros'
 import { AuthContext, AuthProvider } from './context/AuthContext'
 import Login from './pages/Login'
+import EditarConta from './pages/EditarConta'
 import { useContext } from 'react'
 
  const AppRoutes = () => {
@@ -30,6 +31,7 @@ import { useContext } from 'react'
             <Route path='/sobre' element = {<Sobre/>} />
             <Route path='/livros' element = {<Livros/>}  />
             <Route  path='/login' element= {<Login/>}  />
+            <Route path='/editarconta' element = { <Private> <EditarConta /> </Private>} />
             </Routes>
             </AuthProvider>
         </BrowserRouter>

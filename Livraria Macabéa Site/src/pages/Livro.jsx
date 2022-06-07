@@ -2,13 +2,11 @@ import React from 'react'
 import BookCover from '../components/BookCover'
 import BookSection from '../components/BookSection'
 import BookTable from '../components/BookTable'
-<<<<<<< HEAD:Livraria Macabéa Site/src/pages/Livro.jsx
-import LivrosRelacionados from '../components/LivrosRelacionados'
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import '../assets/style/livro.css'
-=======
-import '../style/livro.css'
 import axios from "axios";
->>>>>>> origin/master:Livraria Macabéa Site/src/views/Livro.jsx
 
 function PaginaLivro () {
 
@@ -25,10 +23,13 @@ function PaginaLivro () {
 
           return(
         <section className='main'>
+               <Header />
+                <Navbar />
             <BookCover />
             <BookSection className='book-section' />
             <BookTable />
             <LivrosRelacionados />
+            <Footer />
         </section>
     )
 }
