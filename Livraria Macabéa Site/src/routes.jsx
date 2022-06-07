@@ -2,12 +2,11 @@ import {Route, BrowserRouter, Routes, Navigate} from 'react-router-dom'
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Livros from './pages/Livros'
-import Carrinho from './pages/Carrinho'
-import Cadastro from './pages/Cadastro'
 import { AuthContext, AuthProvider } from './context/AuthContext'
 import Login from './pages/Login'
-import EditarConta from './pages/EditarConta'
 import { useContext } from 'react'
+import CadastroPage from './pages/Cadastro'
+import App from './utils/getLivrosPor'
 
  const AppRoutes = () => {
     const Private = ({children}) =>{
@@ -29,18 +28,25 @@ import { useContext } from 'react'
         <AuthProvider>
         
         <Routes>
-            <Route path='/' index element={<Home/> }/>
+            <Route path='/' element={ <Private> <Home/> </Private> }/>
             <Route path='/sobre' element = {<Sobre/>} />
             <Route path='/livros' element = {<Livros/>}  />
             <Route  path='/login' element= {<Login/>}  />
-            <Route path='/editarconta' element = { <Private> <EditarConta /> </Private>} />
-            <Route path='/carrinho' element = {<Carrinho/>}  />
-            <Route path='/cadastro' element = {<Cadastro/>}  />
+            <Route path="/Cadastro" element={<CadastroPage/>}/>
+           <Route path="/procurar/:titulo" element={<App/>}/>
             </Routes>
             </AuthProvider>
         </BrowserRouter>
        
      )
+
+
+
  } 
+
+
+
+
+
 
  export default AppRoutes;

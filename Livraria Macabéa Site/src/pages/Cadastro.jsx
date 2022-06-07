@@ -1,127 +1,95 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import Header from '../components/Header';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
-import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { useState, useContext } from 'react'
+import { AuthContext } from '../context/AuthContext';
 
-// import toastOptions from '../utils/toastOptions';
-// import verificaSenha from '../utils/verificaSenha';
+function CadastroPage() {
+  const {cadastro, user} = useContext(AuthContext)
+  console.log(user);
 
-import { Input, LabelInput } from '../components/Input';
-import { Button } from '../components/Button';
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [idade, setIdade] = useState("");
+  const [nome, setNome] = useState("");
+  const [endereco, setEndereco] = useState("");
+  const [favorito, setFavorito ] = useState("");
 
-// Gravar novo usuário
-// import { criaUsuario } from '../services/usuarioApi';
 
-// import '../components/signin.scss';
+  const handleSubmit = async (e) =>{
+    e.preventDefault();
+    console.log('submit', {email, senha}) }
 
-function Cadastro() {
-  const [data, setData] = useState({
-    CPF: '',
-    nome: '',
-    email: '',
-    senha: '',
-    endereco: '',
-    url_img: '',
-  });
-  const [confirmaSenha, setConfirmaSenha] = useState('');
-  const navigate = useNavigate();
+    return (
+      <main>
+      <Header />
+  
+      <div id="container" >
+      <a className="links" id="paralogin"></a>
+      
+      <div className="content">      
+        <div id="cadastro">
+          <form method="post" onSubmit={handleSubmit}> 
 
-  const handleOnChange = event => {
-    const input = event.target;
-    if (input.name === 'confirmaSenha') {
-      setConfirmaSenha(input.value);
-    } else {
-      setData({
-        ...data, [input.name]: input.value,
-      });
-    }
-  }
-
-  const handleSubmit = async event => {
-    event.preventDefault();
-    const id = toast.loading('Verificando dados...', toastOptions);
-
-    if (!verificaSenha(data.senha, confirmaSenha)) {
-      toast.update(id, {
-        ...toastOptions,
-        render: 'As senhas precisam ser iguais.',
-        type: 'error',
-        isLoading: false,
-      });
-    } else {
-      const res = await criaUsuario(data);
-
-      if (res.erro) {
-        toast.update(id, {
-          ...toastOptions,
-          render: res.msg,
-          type: 'error',
-          isLoading: false,
-        });
-      } else {
-        toast.update(id, {
-          ...toastOptions,
-          render: 'Conta criada com sucesso, faça login abaixo!',
-          type: 'success',
-          position: 'top-right',
-          isLoading: false,
-        });
-
-        navigate('/login');
-      }
-    }
-  }
-
-  return (
- <div>
-       <Header />
-                <Navbar />
-        <form onSubmit={handleSubmit}>
-          <Input
-            className="form" name="CPF" type="text" placeholder="CPF 00000000000" required
-            onChange={handleOnChange}
-          />
-          <Input
-            className="form" name="nome" type="text" placeholder="Nome" required
-            onChange={handleOnChange}
-          />
-          <Input
-             className="form" name="email" type="email" placeholder="Email" required
-            onChange={handleOnChange}
-          />
-
-          <div className="cadastro-senha">
-            <Input 
-              className="form" name="senha" type="password" placeholder="Senha" required metade 
-              onChange={handleOnChange}
-            />
-            <Input
-              className="form" name="confirmaSenha" type="password" placeholder="Repita a senha" required metade
-              onChange={handleOnChange}
-            />
-          </div>
-
-          <Input
-            className="form" name="endereco" type="text" placeholder="Endereço"
-            onChange={handleOnChange}
-          />
-
-          <LabelInput>Foto de perfil:</LabelInput>
-          <Input
-            className="form" name="url_img" type="url" placeholder="Foto de perfil" required
-            onChange={handleOnChange}
-          />
+          <h1>Cadastro</h1> 
           
-          <Button type="submit">Cadastrar</Button>
+          <p> 
+            <label htmlFor="nome">Seu nome</label>
+            <input id="nome" name="nome" required="required" type="text" placeholder="Insira seu nome"
+            value={nome} 
+            onChange={(e)=> setNome(e.target.value)} />
+          </p>
+          
+          <p> 
+            <label htmlFor="idade">Sua idade</label>
+            <input id="idade" name="idade" required="required" type="number" placeholder="Insira sua idade"
+            value={idade} 
+            onChange={(e)=> setIdade(e.target.value)} />
+          </p>
+
+          <p> 
+            <label htmlFor="endereço">Seu Endereço</label>
+            <input id="endereço" name="endereço" required="required" type="text" placeholder="Rua resilia"
+            value={endereco} 
+            onChange={(e)=> setEndereco(e.target.value)}/> 
+          </p>
+
+          <p> 
+            <label htmlFor="comida">Seu Livro Favorito</label>
+            <input id="comida" name="comida" required="required" type="text" placeholder="Contos de fada"
+            value={favorito} 
+            onChange={(e)=> setFavorito(e.target.value)}/> 
+          </p>
+          
+          <p> 
+            <label htmlFor="email">Seu e-mail</label>
+            <input id="email" name="email" required="required" type="email" placeholder="example@example.com"
+            value={email} 
+            onChange={(e)=> setEmail(e.target.value)}/> 
+          </p>
+          
+          <p> 
+            <label htmlFor="senha">Sua senha</label>
+            <input id="senha" name="senha" required="required" type="password" placeholder="1234"
+            value={senha} 
+            onChange={(e)=> setSenha(e.target.value)}/>
+          </p>
+          
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+          
+          <p className="link">  
+            Já tem conta?
+            <a href="/Login"> Ir para Login </a>
+          </p>
         </form>
-        <Footer />
-   </div>
-  );
+      </div>
+    </div>
+  </div> 
+
+    </main>
+  )
 }
 
-export default Cadastro;
- 
+export default CadastroPage;

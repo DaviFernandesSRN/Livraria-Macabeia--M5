@@ -3,17 +3,17 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-// import verificaSenha from '../utils/verificaSenha';
-// import toastOptions from '../utils/toastOptions';
-// import { buscaUsuarioPeloId, atualizaUsuario } from '../services/usuarioApi';
+import verificaSenha from '../utils/verificaSenha';
+import toastOptions from '../utils/toastOptions';
+import { buscaUsuarioPeloId, atualizaUsuario } from '../services/usuarioApi';
 import { AuthContext } from '../context/AuthContext';
 
-// import Loading from '../components/Loading/Loading';
-// import { Input, LabelInput } from '../components/Input/Input';
-// import { Button } from '../components/Button/Button';
-// import { BoxCadastro } from '../components/SignIn/styles';
-// import { Main } from '../components/Main/styles';
-// import { Titulo, Barra } from '../components/Headings/styles';
+import Loading from '../components/Loading/Loading';
+import { Input, LabelInput } from '../components/Input/Input';
+import { Button } from '../components/Button/Button';
+import { BoxCadastro } from '../components/SignIn/styles';
+import { Main } from '../components/Main/styles';
+import { Titulo, Barra } from '../components/Headings/styles';
 
 function EditarConta() {
   const { handleDeletaConta } = useContext(AuthContext);

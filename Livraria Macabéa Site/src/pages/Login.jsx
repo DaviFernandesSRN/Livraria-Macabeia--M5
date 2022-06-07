@@ -1,7 +1,4 @@
 import React, {useContext, useState} from 'react';
-import Header from '../components/Header';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { AuthContext } from '../context/AuthContext';
 
 function Login() {
@@ -21,8 +18,6 @@ function Login() {
 
   return (
     <main>
-               <Header />
-                <Navbar />
     <div id="login">
 
       <h1 className="title"> Login</h1>   
@@ -57,7 +52,7 @@ function Login() {
 
         </form>
     </div>
-    <Footer />
+
     </main>
   )
 }
