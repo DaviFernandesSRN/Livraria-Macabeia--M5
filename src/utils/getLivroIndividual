@@ -1,0 +1,33 @@
+import React, { useState, useEffect, useContext } from 'react'
+import {getLivrosPorName} from './axios'
+import { useParams } from 'react-router-dom';
+import Livro from '../pages/Livro'
+
+function GetLivroIndividual() {
+ const {titulo}= useParams()
+ const [livros, setLivros] = useState([]);
+ const [loading, setLoading] = useState(true);
+
+  useEffect(()=>{
+    (async()=>{
+      const tituloFormatado = titulo.split("%20").join(" ");
+      const response = await getLivrosPorName(tituloFormatado);
+      setLivros(response.data);
+      setLoading(false);
+    })()
+  },[])
+
+  if(loading){
+    return (<div className="loading"> Carregando...</div>)
+  }
+
+  return (
+      <div>
+      {titulo}
+      </div>
+    
+    
+  )
+}
+
+export default GetLivroIndividual;

@@ -15,10 +15,10 @@
     justify-content: space-between;
 }
 
-/* .logo {
-    width: 180px;
-    height: auto;
-} */
+.top > a {
+    text-decoration: none;
+ border: 0;
+}
 
 .icons {
     width: 100px;
@@ -58,6 +58,7 @@
 }
 
 .searchbox {
+    width: 100%;
     border: none;
 }
 

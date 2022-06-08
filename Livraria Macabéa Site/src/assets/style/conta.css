@@ -1,0 +1,29 @@
+.conta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    padding: 2rem;
+    gap: 1rem;
+    height: 50vh;
+    background-color: var(--red);
+}
+
+.cadastro-chamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 3px solid var(--red);
+    border-radius: 10px;
+    height: 100%;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .conta-container {
+        height: auto;
+        flex-direction: column;
+    }
+}

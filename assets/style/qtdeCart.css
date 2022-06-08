@@ -4,19 +4,22 @@
 }
 
 .qtde-cart {
+    width: 150px;
     display: flex;
     justify-content: space-around;
+    margin: 2rem 0;
 }
 
 .muda-qtde {
     color: var(--greyletter);
     width: 35px;
     height: 35px;
-    border: 2px solid var(--grey);
+    border: 2px solid var(--greyletter);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .muda-qtde:hover {
@@ -29,7 +32,7 @@
     color: var(--greyletter);
     width: 5rem;
     height: 35px;
-    border: 2px solid var(--grey);
+    border: 2px solid var(--greyletter);
     border-radius: 100px;
     display: flex;
     justify-content: center;

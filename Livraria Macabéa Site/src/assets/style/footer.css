@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Fira+Sans:wght@300&display=swap');
+
+:root {
+    --black: #211b1c;
+    --red: #f01d2e;
+    --mustyblack: #151d11;
+}
+
+.footer {
+    box-sizing: border-box;
+    padding: 2rem;
+    max-width: 100vw;
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+
+.footer-col {
+    text-align: justify;
+}
+
+.footer-col > a {
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-col > a:visited {
+    color: whitesmoke;
+}
+
+.footer-col > a:hover {
+    color: var(--red);
+}
+
+.footer-col > a:active {
+    color: var(--red);
+}
+
+.footer-title {
+    color: var(--red);
+    font-size: 1.5rem;
+}
+
+.icon {
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.icon:hover {
+    color: var(--red);
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

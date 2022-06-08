@@ -1,0 +1,16 @@
+.busca-container {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.mainsearchbox {
+    line-height: 2rem;
+    width: 50vw;
+    outline: 1px;
+    border-radius: 50px;
+}

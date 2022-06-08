@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Fira+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #211b1c;
+    --red: #f01d2e;
+    --mustyblack: #151d11;
+}
+
+.topmenu {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 0 1rem 0;
+    background-color: var(--mustyblack);
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.links {
+    margin: 0;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+li > a {
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+}
+
+li > a:visited {
+    color: whitesmoke;
+}
+
+li > a:hover {
+    color: var(--red);
+}
+
+li > a:active {
+    color: var(--red);
+}
+
+/* creating the animated underline */
+li> a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--red);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  li> a:hover::before {
+    transform: scaleX(1);
+  }
