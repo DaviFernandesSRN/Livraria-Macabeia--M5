@@ -10,8 +10,7 @@ function Sobre() {
                 <Navbar />
             <main>
                 <img className='banner-top' src={"./img/Sobre.png"} alt="Sobre a equipe" />
-                <h1>Sobre Nós!</h1>
-                <p>Texto sobre a livraria...</p>
+ 
             </main>
             <Footer />
         </div>
