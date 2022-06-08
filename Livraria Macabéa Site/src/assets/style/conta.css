@@ -20,3 +20,10 @@
     height: 100%;
     background-color: white;
 }
+
+@media (max-width: 768px) {
+    .conta-container {
+        height: auto;
+        flex-direction: column;
+    }
+}

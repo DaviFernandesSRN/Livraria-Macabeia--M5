@@ -10,15 +10,19 @@
     justify-content: space-around;
     align-items: center;
 
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+}
+
+label {
+    width: 100px;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
+    place-items: center;
 }
 
 .field {
