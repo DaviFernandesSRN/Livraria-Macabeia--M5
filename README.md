@@ -22,10 +22,10 @@
 ## 📋 Planejamento e organização do projeto:
 
 <p style="font-size: 14px">Para um bom andamento do projeto em tempo hábil para a entrega do melhor resultado possível foram utilizadas algumas ferramentas e aplicadas metotologias ágeis.</p>
-  <p style="font-size: 14px"> Metodologias ágeis: 
-<ul style="list-style: square;">
-  <li>SCRUM</li>
-   <li>Kanban</li>    
+  <p style="font-size: 14px"> Metodologia Ágil: 
+<ul style="list-style: square;">  
+   <li>Kanban</li>
+   <li>Lean</li>
 </ul>
 <p style="font-size: 14px"> Ferramentas: 
 <ul style="list-style: square;">
@@ -49,7 +49,7 @@
   - Ferramentas de testes:<br>
     - Insomnia<br>
   
-  -Ferramenta de deploy:<br>
+  - Ferramenta de deploy:<br>
     - Vercel<br>
 <br>
 <hr/>
@@ -66,7 +66,7 @@ Abra http://localhost:3000 para ver o app no navegador.
 
 ## 🚀 Deploy da aplicação:
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=VERCEL&message=TESTING&color=pink&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=VERCEL&message=DEPLOYED&color=green&style=for-the-badge"/>
 </p>
 <p align="center"><img src="https://github.com/irenacosta/Livraria-Macabeia--M5/blob/irena/src/macabea.png?raw=true" /></p>
 <p align="center"> <a href="https://livrariamacabea.vercel.app/">Livraria Macabéa</a> 
