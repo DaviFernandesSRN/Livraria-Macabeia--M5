@@ -15,7 +15,7 @@ function Header () {
     
             {/* Link pra home */}
             <Link to='/'>
-            <img src= {Logo} className='logo' />
+            <img src= {require('../assets/img/logo.png')}className='logo' />
             </Link>
 
             <div className='rightbar'>
