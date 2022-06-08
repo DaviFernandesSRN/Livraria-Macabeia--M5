@@ -5,6 +5,7 @@ import GetLivrosPor from '../utils/getLivrosPor'
 import axios from 'axios'
 import {useState, useEffect} from 'react';
 
+
 function Header () {
     const[ilivros, setIlivros] = useState('')
     const MessageSearchBox = 'Procure um livro pelo nome'
@@ -14,7 +15,7 @@ function Header () {
     
             {/* Link pra home */}
             <Link to='/'>
-            <img src="src/assets/img/logo.png" className='logo' />
+            <img src= "assets/logo.png" className='logo' />
             </Link>
 
             <div className='rightbar'>

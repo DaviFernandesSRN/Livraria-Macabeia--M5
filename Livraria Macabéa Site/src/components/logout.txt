@@ -1,9 +1,0 @@
- import {AuthContext} from '../context/AuthContext'
- 
- const {logout} = useContext(AuthContext);       
-       
-       const handleLogout = ()=>{
-    logout();
-  }
-     
-     <button onClick={handleLogout}>Sair</button>
