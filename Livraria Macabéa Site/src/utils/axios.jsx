@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 const api = axios.create({
   baseURL: "https://livrariamacabeia.herokuapp.com/",
 });
@@ -22,4 +21,6 @@ export const createUser = async (nome,email,senha,endereco,cpf,data_de_aniversar
 export const getLivrosPorName = async (titulo)=>{
   return api.get(`livros/titulo/${titulo}`);
  }
+
+
 

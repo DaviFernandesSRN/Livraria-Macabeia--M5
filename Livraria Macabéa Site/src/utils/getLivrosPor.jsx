@@ -1,23 +1,17 @@
 import React, { useState, useEffect, useContext } from 'react'
-import {AuthContext} from '../context/AuthContext'
-import {getLivrosPorName} from './axios'
-import Header from '../components/Header';
+import {getLivrosPorName, buscaLivros} from './axios'
 import { useParams } from 'react-router-dom';
-
+import Livro from '../pages/Livro'
 
 function GetLivrosPor() {
- // const [url, setUrl] = useState()
  const {titulo}= useParams()
  const [livros, setLivros] = useState([]);
  const [loading, setLoading] = useState(true);
- const {logout} = useContext(AuthContext);
-  const handleLogout = ()=>{
-    logout();
-  }
+ const [naoencontrado, setNaoencontrado] = useState(true);
 
   useEffect(()=>{
     (async()=>{
-        const tituloFormatado = titulo.split("%20").join(" ")
+      const tituloFormatado = titulo.split("%20").join(" ");
       const response = await getLivrosPorName(tituloFormatado);
       setLivros(response.data);
       setLoading(false);
@@ -25,20 +19,17 @@ function GetLivrosPor() {
   },[])
 
   if(loading){
-    return <div className="loading"> Carregando dados...</div>
+    return <div className="loading"> Carregando...</div>
   }
 
   // Inserir isso na página individual de livro
   return (
     <div>
-      
-      <Header />
-      <button onClick={handleLogout}>Sair</button>
       <ul>
         {livros.map((titulo)=>(
           <li key={titulo._id}>
-           <p> {titulo.titulo} - {titulo.autor} - {titulo.preco} - {titulo.sinopse}  </p>
             <img src={titulo.imagem}></img>
+           <p> {titulo.titulo} - {titulo.autor} - {titulo.preco} - {titulo.sinopse}  </p>
           </li>
         ))}
       </ul>
