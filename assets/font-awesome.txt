@@ -1,3 +1,0 @@
-Search - <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
-Carrinho - <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
-Login - <FontAwesomeIcon icon="fa-solid fa-user" />
