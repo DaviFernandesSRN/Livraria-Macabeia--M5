@@ -47,7 +47,9 @@
 
   - Ferramentas de testes:<br>
     - Insomnia<br>
-    - Postman<br>
+  
+  -Ferramenta de deploy:<br>
+    - Vercel<br>
 <br>
 <hr/>
 
@@ -60,6 +62,17 @@ npm install vite@lastest
 npm start / npm run build
 ```
 Abra http://localhost:3000 para ver o app no navegador.
+
+## 🚀 Deploy da aplicação:
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=VERCEL&message=TESTING&color=pink&style=for-the-badge"/>
+</p>
+<p align="center"><img src="https://github.com/irenacosta/Livraria-Macabeia--M5/blob/irena/src/macabea.png?raw=true" /></p>
+<p align="center"> <a href="https://livrariamacabea.vercel.app/">Livraria Macabéa</a> 
+</p>
+
+
+
 
 ## 👥 Equipe:
 | [<img src="https://avatars.githubusercontent.com/u/15349795?v=4" width=115><br><sub>Amanda Alexandre</sub>](https://github.com/amandaalexandre) |  [<img src="https://avatars.githubusercontent.com/u/96249443?v=4" width=115><br><sub>Camille Monteiro</sub>](https://github.com/camimonteiro) |  [<img src="https://avatars.githubusercontent.com/u/96270135?v=4" width=115><br><sub>Davi Fernandes</sub>](https://github.com/DaviFernandesSRN) |
