@@ -7,7 +7,7 @@ import Login from './pages/Login'
 import { useContext } from 'react'
 import Livro from './pages/Livro'
 import CadastroPage from './pages/Cadastro'
-import GetLivrosPor from './utils/getLivrosP'
+import GetLivrosPor from './utils/getLivrosPor'
 import PaginaConta from './pages/Conta'
 import Busca from './pages/Busca'
 
