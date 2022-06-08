@@ -4,6 +4,7 @@ import {useState, useEffect} from "react";
 import '../assets/style/livro-section.css'
 import '../assets/style/book-thumb.css'
 import '../assets/style/book-shop.css'
+import {Link} from 'react-router-dom'
 
 function BookShop() {
     const baseURL = "https://livrariamacabeia.herokuapp.com";
@@ -24,11 +25,13 @@ function BookShop() {
         <div className="container-book-grid">
             {listaLivros.map(livro => (
                 <div key={livro._id} className="book-card">
-                    <img src={livro.imagem} className='thumb-cover'></img>
-                    <br/>
-                    <h4 className="book-thumb-title">{livro.titulo}</h4>
-                    <p>{livro.autor}</p>
-                    <div className="book-price">R$ {livro.preco}</div>
+                    <Link to={`/livro/${livro.titulo}`}>
+                        <img src={livro.imagem} className='thumb-cover'></img>
+                        <br/>
+                        <h4 className="book-thumb-title">{livro.titulo}</h4>
+                        <p>{livro.autor}</p>
+                        <div className="book-price">R$ {livro.preco}</div>
+                    </Link>
                 </div>
             ))}
         </div>

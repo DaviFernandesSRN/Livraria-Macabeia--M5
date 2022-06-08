@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import {getLivrosPorName, buscaLivros} from './axios'
+import {getLivrosPorName} from './axios'
 import { useParams } from 'react-router-dom';
 import Livro from '../pages/Livro'
 

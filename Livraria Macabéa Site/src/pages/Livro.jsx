@@ -2,11 +2,9 @@ import React from 'react'
 import BookCover from '../components/BookCover'
 import BookSection from '../components/BookSection'
 import BookTable from '../components/BookTable'
-// import LivrosRelacionados from '../components/LivrosRelacionados'
 import '../assets/style/livro.css'
-// import GetLivrosPor from '../utils/getLivrosPor'
 
-function PaginaLivro ({livro}) {
+function PaginaLivro (livro) {
 
           return(
         <section className='main' key='_id'>

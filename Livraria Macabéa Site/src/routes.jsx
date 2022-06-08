@@ -5,6 +5,7 @@ import Livros from './pages/Livros'
 import { AuthContext, AuthProvider } from './context/AuthContext'
 import Login from './pages/Login'
 import { useContext } from 'react'
+import Livro from './pages/Livro'
 import CadastroPage from './pages/Cadastro'
 import GetLivrosPor from './utils/getLivrosPor'
 import PaginaConta from './pages/Conta'
@@ -37,6 +38,7 @@ import Busca from './pages/Busca'
             <Route path='/conta' element={<PaginaConta/>} />
             <Route path='/busca' element={<Busca/>} />
            <Route path="/procurar/:titulo" element={<GetLivrosPor/>}/>
+           <Route path="/livro/:titulo" element={<Livro/>}/>
             </Routes>
             </AuthProvider>
         </BrowserRouter>
