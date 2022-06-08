@@ -9,8 +9,9 @@ function Login() {
     <div>
       <Header />
       <Navbar />
-      <LoginBox/>
-      <Footer />
+  
+    <LoginBox/>
+    <Footer />
     </div>
   )
 }
