@@ -15,6 +15,7 @@
 
 <p style="font-size: 16px">Projeto de conclusão do Módulo 5 da <a href="https://www.resilia.com.br/">Resilia Educação</a></p>
 <p style="font-size: 14px">O projeto teve como objetivo e desafio desenvolver o front-end de um site com os conhecimentos adquiridos nas aulas de ReactJS, consumindo a API Rest desenvolvida no módulo 4, utilizando react-router-dom, biblioteca vite, hooks e afins para sua implementação.</p>
+<p style="font-size: 14px">A API do módulo 4 passou por um refinamento, sendo toda transferida para plataforma Mongoose e recebeu tratamento dos dados para trazer um diferencial para o projeto da livraria.</p>
 
 <hr/>
 
