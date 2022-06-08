@@ -1,8 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
-
 import {getLivrosPorName} from '../utils/axios'
-import BookCover from '../components/BookCover'
+
+import Header from '../components/Header'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 import '../assets/style/qtdeCart.css'
 import '../assets/style/livro.css'
 import '../assets/style/livro-section.css'
@@ -24,22 +27,27 @@ function PaginaLivro () {
      },[])
 
           return(
-
             <div>
-            <ul>
+           <Header/>
+           <Navbar/>
+   
               {livroIndividual.map((titulo)=>(
-                <li key={titulo._id}>
-                        <div className='cover-container'>
-            <img src={titulo.imagem} className='cover' />
-        </div>
+               
+                <div  className='main' key={titulo._id}>
+                    <h1 className='book-title'>{titulo.titulo}</h1>
+                    {/* Capa */}
+                    <div className='cover-container'>
+                        <img src={titulo.imagem} className='cover' />
+                    </div>
+
 
         <p className="book-author">Autor: {titulo.autor}</p>
 
-        <div className="book-price">
-        {titulo.preco}
-    </div>
+        <p className="book-rating">Avaliação: 4.5</p>
 
-    <p className="book-rating">Avaliação: 4.5</p>
+        <div className="book-price">{titulo.preco}</div>
+
+ 
 
     <p className="sinopse">{titulo.sinopse}</p>
 
@@ -55,12 +63,14 @@ function PaginaLivro () {
             COMPRAR
         </button>
         </div>
-                </li>
+     
+                </div>
+
               ))}
-            </ul>
+   
+      <Footer/>
+            </div>
       
-         
-        </div>
     )
 }
 

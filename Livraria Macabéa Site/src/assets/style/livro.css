@@ -12,13 +12,25 @@
     padding: 2rem;
     width: clamp(100%, 80%, 70%);
     display: grid;
-    grid-template-columns: 350px 30vw 20vw;
-    grid-template-rows: auto;
+    grid-auto-flow: column;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: repeat(5, auto);
     gap: 2rem;
 }
 
 .book-section {
     height: auto;
+}
+
+.cover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    width: 300px;
+    height: 500px;
 }
 
 .booktable {
@@ -40,10 +52,6 @@ td:nth-child(even) {
     background-color: white;
     width: 70%;
     font-weight: 500;
-}
-.relatedbooks {
-    grid-column: 3/4;
-    grid-row: 1/4;
 }
 
 @media (max-width: 768px) {
