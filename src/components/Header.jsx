@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import GetLivrosPor from '../utils/getLivrosPor'
 import axios from 'axios'
 import {useState, useEffect} from 'react';
+import Logo from "../assets/img/logo.png";
 
 function Header () {
     const[ilivros, setIlivros] = useState('')
@@ -14,7 +15,7 @@ function Header () {
     
             {/* Link pra home */}
             <Link to='/'>
-            <img src="../assets/img/logo.png" className='logo' />
+            <img src= {Logo} className='logo' />
             </Link>
 
             <div className='rightbar'>
