@@ -6,7 +6,7 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 <p align="center">
-<img src="https://github.com/irenacosta/Livraria-Macabeia--M5/blob/main/Livraria%20Macab%C3%A9a%20Site/src/assets/img/logo.png?raw=true"/>
+<img src="https://github.com/irenacosta/Livraria-Macabeia--M5/blob/main/src/assets/img/logo.png?raw=true"/>
 </p>
 
 <hr/>
