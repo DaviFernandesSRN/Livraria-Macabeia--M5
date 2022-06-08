@@ -1,9 +1,10 @@
 import React from "react";
 import '../assets/style/livro-section.css'
+import PaginaLivro from "../pages/Livro";
 
-function BookPrice () {
+function BookPrice (livro) {
     return (<div className="book-price">
-        R$ 10
+        {livro.preco}
     </div>)
 }
 

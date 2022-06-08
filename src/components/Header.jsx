@@ -12,7 +12,11 @@ function Header () {
     return (
         <header className='top'>
     
-            <img src="src\assets\img\logo.png" className='logo' />
+            {/* Link pra home */}
+            <Link to='/'>
+            <img src="src/assets/img/logo.png" className='logo' />
+            </Link>
+
             <div className='rightbar'>
                 
             <div className='search-bar'>
