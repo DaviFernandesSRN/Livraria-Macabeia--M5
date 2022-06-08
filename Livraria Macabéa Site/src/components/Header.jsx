@@ -1,6 +1,5 @@
 import React from 'react'
 import '../assets/style/header.css'
- '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import GetLivrosPor from '../utils/getLivrosPor'
 import axios from 'axios'

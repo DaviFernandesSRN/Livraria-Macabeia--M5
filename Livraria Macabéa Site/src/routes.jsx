@@ -8,6 +8,7 @@ import { useContext } from 'react'
 import CadastroPage from './pages/Cadastro'
 import GetLivrosPor from './utils/getLivrosPor'
 import PaginaConta from './pages/Conta'
+import Busca from './pages/Busca'
 
  const AppRoutes = () => {
     const Private = ({children}) =>{
@@ -34,6 +35,7 @@ import PaginaConta from './pages/Conta'
             <Route  path='/login' element= {<Login/>}  />
             <Route path="/Cadastro" element={<CadastroPage/>}/>
             <Route path='/conta' element={<PaginaConta/>} />
+            <Route path='/busca' element={<Busca/>} />
            <Route path="/procurar/:titulo" element={<GetLivrosPor/>}/>
             </Routes>
             </AuthProvider>
