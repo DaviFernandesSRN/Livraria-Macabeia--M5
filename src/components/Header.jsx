@@ -14,7 +14,7 @@ function Header () {
     
             {/* Link pra home */}
             <Link to='/'>
-            <img src="./assets/img/logo.png" className='logo' />
+            <img src="../assets/img/logo.png" className='logo' />
             </Link>
 
             <div className='rightbar'>
