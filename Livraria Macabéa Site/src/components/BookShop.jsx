@@ -5,6 +5,7 @@ import '../assets/style/livro-section.css'
 import '../assets/style/book-thumb.css'
 import '../assets/style/book-shop.css'
 import {Link} from 'react-router-dom'
+import Livro from '../pages/Livro'
 
 function BookShop() {
     const baseURL = "https://livrariamacabeia.herokuapp.com";

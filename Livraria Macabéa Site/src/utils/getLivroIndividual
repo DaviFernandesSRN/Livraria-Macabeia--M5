@@ -3,7 +3,7 @@ import {getLivrosPorName} from './axios'
 import { useParams } from 'react-router-dom';
 import Livro from '../pages/Livro'
 
-function GetLivrosPor() {
+function GetLivroIndividual() {
  const {titulo}= useParams()
  const [livros, setLivros] = useState([]);
  const [loading, setLoading] = useState(true);
@@ -18,24 +18,16 @@ function GetLivrosPor() {
   },[])
 
   if(loading){
-    return <div className="loading"> Carregando...</div>
+    return (<div className="loading"> Carregando...</div>)
   }
 
-  // Inserir isso na página individual de livro
   return (
-    <div>
-      <ul>
-        {livros.map((titulo)=>(
-          <li key={titulo._id}>
-            <img src={titulo.imagem}></img>
-           <p> {titulo.titulo} - {titulo.autor} - {titulo.preco} - {titulo.sinopse}  </p>
-          </li>
-        ))}
-      </ul>
-
-    </div>
+      <div>
+      {titulo}
+      </div>
+    
     
   )
 }
 
-export default GetLivrosPor;
+export default GetLivroIndividual;

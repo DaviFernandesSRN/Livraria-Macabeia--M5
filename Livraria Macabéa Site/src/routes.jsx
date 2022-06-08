@@ -32,12 +32,14 @@ import Busca from './pages/Busca'
         <Routes>
             <Route path='/' index element={  <Home/> }/>
             <Route path='/sobre' element = {<Sobre/>} />
-            <Route path='/livros' element = {<Livros/>}  />
+
             <Route  path='/login' element= {<Login/>}  />
             <Route path="/Cadastro" element={<CadastroPage/>}/>
             <Route path='/conta' element={<PaginaConta/>} />
             <Route path='/busca' element={<Busca/>} />
            <Route path="/procurar/:titulo" element={<GetLivrosPor/>}/>
+          
+           <Route path='/livros' element = {<Livros/>}  />
            <Route path="/livro/:titulo" element={<Livro/>}/>
             </Routes>
             </AuthProvider>
