@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/style/header.css'
 import { Link } from 'react-router-dom'
-import GetLivrosPor from '../utils/getLivrosPor'
+import GetLivrosPor from '../utils/getLivrosP'
 import axios from 'axios'
 import {useState, useEffect} from 'react';
 

@@ -6,7 +6,7 @@ import { AuthContext, AuthProvider } from './context/AuthContext'
 import Login from './pages/Login'
 import { useContext } from 'react'
 import CadastroPage from './pages/Cadastro'
-import GetLivrosPor from './utils/getLivrosPor'
+import GetLivrosPor from './utils/getLivrosP'
 import PaginaConta from './pages/Conta'
 
  const AppRoutes = () => {
