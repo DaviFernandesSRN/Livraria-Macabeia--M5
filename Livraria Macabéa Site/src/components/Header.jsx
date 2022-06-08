@@ -1,7 +1,6 @@
 import React from 'react'
 import '../assets/style/header.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faUser, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+ '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import GetLivrosPor from '../utils/getLivrosPor'
 import axios from 'axios'
@@ -14,7 +13,11 @@ function Header () {
     return (
         <header className='top'>
     
+            {/* Link pra home */}
+            <Link to='/'>
             <img src="src\assets\img\logo.png" className='logo' />
+            </Link>
+
             <div className='rightbar'>
                 
             <div className='search-bar'>
