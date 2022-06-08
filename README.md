@@ -33,8 +33,8 @@
 </ul>
 <hr/>
 
-## 📋 API Consumida no Projeto:
-- Repositório: https://github.com/camimonteiro/Project_API_Bookstore
+## 📋 API Final Consumida no Projeto:
+- Repositório: https://github.com/DaviFernandesSRN/backend_Projeto_Livraria_Macabeia
 <hr/>
 
 ## 🛠️ Tecnologias utilizadas:
