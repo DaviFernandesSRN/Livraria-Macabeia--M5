@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Fira+Sans:wght@300&display=swap');
+
+:root{
+    --black: #211b1c;
+    --grey: #8f8f89;
+    --mustyblack: #151d11;
+}
+
+.top {
+    box-sizing: border-box;
+    /* width: 100vw; */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .logo {
+    width: 180px;
+    height: auto;
+} */
+
+.icons {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon {
+    height: clamp(20px, 1rem, 40px);
+}
+
+.rightbar {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.search-bar {
+    width: clamp(30%, 400px, 70%);
+    border: 1px solid var(--mustyblack); 
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#search-toggle {
+    display: none;
+}
+
+.searchbox {
+    border: none;
+}
+
+.searchbox:focus {
+    outline: none
+}
+
+@media only screen and (max-width: 768px) {
+    #search-toggle {
+        display: inline;
+    }
+
+    .search-bar {
+        display: none;
+    }
+}

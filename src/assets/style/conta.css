@@ -1,0 +1,29 @@
+/* :root{
+    --greyborder: rgb(223, 225, 235, 0.8);
+    --red: #f01d2e;
+    --black: #211b1c;
+} */
+
+.conta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.cadastro-chamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--red);
+    border-radius: 10px;
+}
