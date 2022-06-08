@@ -22,10 +22,10 @@
 ## 📋 Planejamento e organização do projeto:
 
 <p style="font-size: 14px">Para um bom andamento do projeto em tempo hábil para a entrega do melhor resultado possível foram utilizadas algumas ferramentas e aplicadas metotologias ágeis.</p>
-  <p style="font-size: 14px"> Metodologias ágeis: 
-<ul style="list-style: square;">
-  <li>SCRUM</li>
-   <li>Kanban</li>    
+  <p style="font-size: 14px"> Metodologia Ágil: 
+<ul style="list-style: square;">  
+   <li>Kanban</li>
+   <li>Lean</li>
 </ul>
 <p style="font-size: 14px"> Ferramentas: 
 <ul style="list-style: square;">
@@ -49,7 +49,7 @@
   - Ferramentas de testes:<br>
     - Insomnia<br>
   
-  -Ferramenta de deploy:<br>
+  - Ferramenta de deploy:<br>
     - Vercel<br>
 <br>
 <hr/>
